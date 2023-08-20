@@ -9,6 +9,7 @@ interface HeroProps {
 interface NavProps {
   headings: string[]
   linkedin: string
+  github: string
 }
 
 interface I18nProps {
@@ -29,6 +30,7 @@ export const i18n: I18nProps = {
         'contato',
       ],
       linkedin: 'https://www.linkedin.com/in/joaovfjardim/',
+      github: 'https://github.com/jvfontouraj',
     },
     hero: {
       subtitle: 'Desenvolvedor Front-End',
@@ -42,6 +44,7 @@ export const i18n: I18nProps = {
     nav: {
       headings: ['projects', 'skills', 'experience', 'education', 'contact'],
       linkedin: 'https://www.linkedin.com/in/joaovfjardim/?locale=en_US',
+      github: 'https://github.com/jvfontouraj',
     },
     hero: {
       subtitle: 'Front-End Developer',

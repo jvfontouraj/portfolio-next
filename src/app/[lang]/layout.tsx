@@ -9,7 +9,7 @@ const sora = Sora({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Dev João Jardim',
-  description: 'Portifólio do desenvolvedor Front-End João Jardim',
+  description: 'Portfólio do desenvolvedor Front-End João Jardim',
 }
 
 export default function RootLayout({
@@ -23,10 +23,7 @@ export default function RootLayout({
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
       </head>
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-        <body
-          id="body"
-          className="relative bg-white text-neutral-800 duration-200 dark:bg-neutral-800 dark:text-white"
-        >
+        <body id="body" className="themeConfig relative">
           <Header />
           {children}
         </body>

@@ -11,17 +11,29 @@ import { GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
 
 export function Header() {
   const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme()
+  const { theme, setTheme, systemTheme } = useTheme()
   const pathName = usePathname()
   const lang = pathName.slice(1)
   const content = i18n[lang].nav
 
   useEffect(() => {
     setMounted(true)
-  }, [])
+
+    if (systemTheme === 'dark') {
+      setTheme('dark')
+      console.log('systemTheme', systemTheme)
+    } else if (systemTheme === 'light') {
+      setTheme('light')
+      console.log('systemTheme', systemTheme)
+    } else {
+      setTheme('dark')
+      console.log('systemTheme', systemTheme)
+    }
+  }, [setTheme, systemTheme])
 
   function handleToggleTheme() {
     setTheme(theme === 'dark' ? 'light' : 'dark')
+    console.log('theme', theme)
   }
 
   if (!mounted) {
@@ -32,10 +44,12 @@ export function Header() {
     <header className="sticky top-0 m-auto py-10 backdrop-blur-lg">
       <div className="relative flex h-auto w-screen items-center justify-center">
         <div className="absolute left-0 flex items-center gap-10 px-10">
-          <Link href={content.linkedin}>
-            <LinkedInLogoIcon className="h-8 w-8 fill-neutral-800" />
+          <Link href={content.linkedin} target="_blank">
+            <LinkedInLogoIcon className="h-8 w-8" />
           </Link>
-          <GitHubLogoIcon className="h-8 w-8 fill-neutral-800" />
+          <Link href={content.github} target="_blank">
+            <GitHubLogoIcon className="h-8 w-8" />
+          </Link>
         </div>
         <nav className="flex gap-20 text-lg">
           {content.headings.map((content, index) => (
@@ -47,19 +61,9 @@ export function Header() {
         <div className="absolute right-0 flex items-center gap-10 px-10">
           <button onClick={handleToggleTheme}>
             {theme === 'light' ? (
-              <MoonIcon
-                className={cs(
-                  'h-8 w-8 fill-neutral-800 transition-opacity duration-300',
-                  theme === 'light' ? 'opacity-100' : 'opacity-0',
-                )}
-              />
+              <MoonIcon className="h-8 w-8" />
             ) : (
-              <Sun
-                className={cs(
-                  'h-8 w-8 fill-white transition-opacity duration-300',
-                  theme === 'dark' ? 'opacity-100' : 'opacity-0',
-                )}
-              />
+              <Sun className="h-8 w-8" />
             )}
           </button>
 

@@ -7,7 +7,7 @@ import { Skills } from '../components/Skills'
 
 export default function Home() {
   return (
-    <main>
+    <main className="mx-40 flex flex-col">
       <Hero />
       <Project />
       <Skills />
