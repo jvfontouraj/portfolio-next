@@ -1,7 +1,19 @@
-export function Skills() {
+import { i18n } from '@/assets/i18n'
+import { Badge } from './Badge'
+
+export function Skills({ lang }: { lang: string }) {
+  const skills = i18n[lang].skills
+
   return (
-    <section>
-      <h2>Skills Section</h2>
+    <section id="skills" className="flex flex-col justify-center gap-10">
+      <h2 className="text-center text-4xl">{skills.title}</h2>
+      <div className="mx-auto flex h-auto w-full flex-wrap items-center justify-center gap-10 md:max-w-[75rem]">
+        {skills.content.map((content, index) => (
+          <div key={index}>
+            <Badge>{content}</Badge>
+          </div>
+        ))}
+      </div>
     </section>
   )
 }

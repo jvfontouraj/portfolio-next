@@ -4,9 +4,8 @@ import MoonIcon from '@/assets/moon.svg'
 import { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 import { usePathname } from 'next/navigation'
-import { i18n } from '@/data/i18n'
+import { i18n } from '@/assets/i18n'
 import { Sun } from '@phosphor-icons/react'
-import cs from 'classnames'
 import { GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
 
 export function Header() {
@@ -41,20 +40,23 @@ export function Header() {
   }
 
   return (
-    <header className="sticky top-0 m-auto py-10 backdrop-blur-lg">
+    <header className="sticky top-0 z-50 m-auto py-10 backdrop-blur-lg">
       <div className="relative flex h-auto w-screen items-center justify-center">
         <div className="absolute left-0 flex items-center gap-10 px-10">
-          <Link href={content.linkedin} target="_blank">
+          <Link
+            href="https://www.linkedin.com/in/joaovfjardim/"
+            target="_blank"
+          >
             <LinkedInLogoIcon className="h-8 w-8" />
           </Link>
-          <Link href={content.github} target="_blank">
+          <Link href="https://github.com/jvfontouraj" target="_blank">
             <GitHubLogoIcon className="h-8 w-8" />
           </Link>
         </div>
         <nav className="flex gap-20 text-lg">
-          {content.headings.map((content, index) => (
-            <Link key={index} href={`#${content}`}>
-              <h2 className="capitalize">{content}</h2>
+          {content.map((content, index) => (
+            <Link key={index} href={`#${content.id}`}>
+              <h2 className="capitalize">{content.title}</h2>
             </Link>
           ))}
         </nav>

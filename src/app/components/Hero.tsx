@@ -1,14 +1,10 @@
-'use client'
-import { i18n } from '@/data/i18n'
+import { i18n } from '@/assets/i18n'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 import PerfilImg from '@/assets/perfil.jpg'
 import Image from 'next/image'
 import { DownloadIcon } from '@radix-ui/react-icons'
 
-export function Hero() {
-  const pathName = usePathname()
-  const lang = pathName.slice(1)
+export function Hero({ lang }: { lang: string }) {
   const content = i18n[lang].hero
 
   return (
