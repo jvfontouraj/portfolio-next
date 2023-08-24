@@ -12,7 +12,7 @@ export default function Home() {
   const lang = pathName.slice(1)
 
   return (
-    <main className="mx-40 flex flex-col gap-40 pb-40">
+    <main className="mx-6 flex flex-col gap-40 pb-40 md:mx-40">
       <Hero lang={lang} />
       <Projects lang={lang} />
       <Skills lang={lang} />

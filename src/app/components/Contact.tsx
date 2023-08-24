@@ -13,7 +13,7 @@ export function Contact({ lang }: { lang: string }) {
     >
       <h2 className="text-center text-4xl">{contact.title}</h2>
       <form className="mx-auto flex w-full max-w-[830px] flex-col justify-center gap-5">
-        <div className="flex w-full gap-3">
+        <div className="flex w-full flex-col gap-3 md:flex-row">
           <div className="flex w-full flex-col">
             <h3>{content.name}</h3>
             <input

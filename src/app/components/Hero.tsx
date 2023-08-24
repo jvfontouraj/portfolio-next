@@ -8,15 +8,17 @@ export function Hero({ lang }: { lang: string }) {
   const content = i18n[lang].hero
 
   return (
-    <section className="flex h-[calc(100vh-110px)] pb-[110px]">
+    <section className="flex w-full flex-col-reverse gap-10 pb-[110px] md:h-[calc(100vh-110px)] md:flex-row md:gap-0">
       <div className="flex w-full items-center justify-center md:w-1/2">
         <div className="m-auto flex w-fit flex-col items-start justify-center gap-20">
-          <div className="flex flex-col">
+          <div className="hidden flex-col md:flex">
             <h1 className="text-5xl">João Jardim</h1>
             <h2 className="text-xl font-light">{content.subtitle}</h2>
           </div>
-          <p className="max-w-[45ch] text-lg">{content.text}</p>
-          <div className="flex gap-10">
+          <p className="text-center text-base md:max-w-[45ch] md:text-left md:text-lg">
+            {content.text}
+          </p>
+          <div className="mx-auto flex flex-col gap-5 md:mx-0 md:flex-row md:gap-10">
             <Link
               href="/#contact"
               target="_blank"
@@ -33,8 +35,8 @@ export function Hero({ lang }: { lang: string }) {
           </div>
         </div>
       </div>
-      <div className="flex w-full items-center justify-center md:w-1/2">
-        <div className="m-auto h-96 w-96 overflow-hidden rounded-full shadow-xl">
+      <div className="flex w-full items-center justify-center md:mx-0 md:w-1/2">
+        <div className="m-auto aspect-square w-full max-w-[240px] overflow-hidden rounded-full shadow-xl md:h-96 md:w-96">
           <Image
             src={PerfilImg}
             alt={content.imgAlt}

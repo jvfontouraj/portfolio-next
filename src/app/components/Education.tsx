@@ -9,7 +9,7 @@ export function Education({ lang }: { lang: string }) {
       className="mx-auto flex h-auto w-full flex-col items-center justify-center gap-10 md:max-w-[75rem]"
     >
       <h2 className="text-center text-4xl">{education.title}</h2>
-      <div className="flex w-full justify-between">
+      <div className="flex w-full flex-col gap-5 md:flex-row md:justify-between md:gap-2">
         {education.content.map((content, index) => (
           <div
             key={index}

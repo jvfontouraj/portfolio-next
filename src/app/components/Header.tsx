@@ -41,7 +41,11 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 m-auto py-10 backdrop-blur-lg">
-      <div className="relative flex h-auto w-screen items-center justify-center">
+      <div className="flex flex-col md:hidden">
+        <h1 className="text-3xl">João Jardim</h1>
+        <h2 className="text-sm font-extralight">{i18n[lang].hero.subtitle}</h2>
+      </div>
+      <div className="relative hidden h-auto w-screen items-center justify-center md:flex">
         <div className="absolute left-0 flex items-center gap-10 px-10">
           <Link
             href="https://www.linkedin.com/in/joaovfjardim/"

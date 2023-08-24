@@ -18,7 +18,7 @@ export function Projects({ lang }: { lang: string }) {
         {projects.content.map((content, index) => (
           <div
             key={index}
-            className="flex h-auto w-full rounded-[4px] border border-neutral-700"
+            className="flex h-auto w-full flex-col-reverse rounded-[4px] border border-neutral-700 md:flex-row"
           >
             <div className="flex w-full flex-col gap-7 border-r border-neutral-700 p-12">
               <div className="flex flex-col gap-3">
@@ -62,7 +62,7 @@ export function Projects({ lang }: { lang: string }) {
                 )}
               </div>
 
-              <div className="flex gap-3">
+              <div className="flex flex-wrap gap-3">
                 {content.tags.map((tag, index) => (
                   <Badge key={index}>{tag}</Badge>
                 ))}
