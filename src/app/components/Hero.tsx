@@ -36,7 +36,7 @@ export function Hero({ lang }: { lang: string }) {
         </div>
       </div>
       <div className="flex w-full items-center justify-center md:mx-0 md:w-1/2">
-        <div className="m-auto aspect-square w-full max-w-[240px] overflow-hidden rounded-full shadow-xl md:h-96 md:w-96">
+        <div className="m-auto aspect-square w-full max-w-[240px] overflow-hidden rounded-full shadow-xl md:h-96 md:w-96 md:max-w-none">
           <Image
             src={PerfilImg}
             alt={content.imgAlt}

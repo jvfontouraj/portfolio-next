@@ -148,22 +148,24 @@ export const i18n: I18nProps = {
     skills: {
       title: 'Habilidades e Ferramentas',
       content: [
-        'Typescript',
+        'HTML',
+        'CSS',
         'Javascript',
+        'Typescript',
         'React',
         'Next.js',
         'Tailwind',
         'Styled-Components',
-        'CSS',
-        'HTML',
+        'i18n',
         'Figma',
         'Git',
-        'Node.js',
-        'Express',
-        'MongoDB',
-        'MySQL',
-        'PostgreSQL',
-        'Docker',
+        'Github',
+        'Zod',
+        'React Hook-Form',
+        'Stitches',
+        'CVA',
+        'Axios',
+        'Inglês',
       ],
     },
     experience: {
@@ -190,7 +192,7 @@ export const i18n: I18nProps = {
         {
           title: 'Sistemas de Informação',
           institution: 'UNESA',
-          date: 'Out 2022 - Atualmente',
+          date: '2022 - Atualmente',
         },
         {
           title: 'Ensino Médio',
@@ -315,9 +317,9 @@ export const i18n: I18nProps = {
       title: 'Education',
       content: [
         {
-          title: 'Graduation - Information Systems',
+          title: 'Information Systems',
           institution: 'UNESA',
-          date: 'Out 2022 - Currently',
+          date: '2022 - Currently',
         },
         {
           title: 'High School',
