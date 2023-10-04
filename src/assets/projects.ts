@@ -1,12 +1,3 @@
-import ZicoDesktop from '@/assets/zico-desktop.png'
-import ZicoMobile from '@/assets/zico-mobile.png'
-import MuseuFlamengoDesktop from '@/assets/museuflamengo-desktop.png'
-import MuseuFlamengoMobile from '@/assets/museuflamengo-mobile.png'
-import RobbinDesktop from '@/assets/robbin-desktop.png'
-import RobbinMobile from '@/assets/robbin-mobile.png'
-import KizombaDesktop from '@/assets/kizomba-desktop.png'
-import PortfolioDesktop from '@/assets/portfolio-desktop.png'
-
 interface ProjectProps {
   title: string
   media?: object
@@ -19,7 +10,7 @@ interface ProjectProps {
   figmaLink?: string
   tags: string[]
   tools: string
-  images: { desktop: object; mobile: object }
+  images: { desktop: string; mobile: string }
 }
 
 interface ProjectsProps {
@@ -48,8 +39,8 @@ export const projects: ProjectsProps = {
         tags: ['Typescript', 'Tailwind', 'Next.js', 'React'],
         tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
         images: {
-          desktop: ZicoDesktop,
-          mobile: ZicoMobile,
+          desktop: '/zico-desktop.png',
+          mobile: '/zico-mobile.png',
         },
       },
       {
@@ -61,8 +52,8 @@ export const projects: ProjectsProps = {
         tags: ['Typescript', 'Tailwind', 'Next.js', 'React'],
         tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
         images: {
-          desktop: MuseuFlamengoDesktop,
-          mobile: MuseuFlamengoMobile,
+          desktop: '/museuflamengo-desktop.png',
+          mobile: '/museuflamengo-mobile.png',
         },
       },
       {
@@ -74,19 +65,10 @@ export const projects: ProjectsProps = {
         tags: ['Typescript', 'Tailwind', 'Astro', 'React'],
         tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
         images: {
-          desktop: RobbinDesktop,
-          mobile: RobbinMobile,
+          desktop: '/robbin-desktop.png',
+          mobile: '/robbin-mobile.png',
         },
       },
-      //   {
-      //     title: 'Kids of Eden',
-      //     description:
-      //       'Descrição do projeto, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque interdum orci nec commodo. Mauris non lacus sem. Nullam volutpat purus nibh, ut cursus tellus eleifend quis. In et est felis. Vivamus lacinia dui ut consectetur hendrerit. Fusce ac mi sit amet dolor ultrices cursus. Nullam sapien velit, fringilla nec justo nec, ultricies porta arcu.',
-      //     websiteTitle: 'kidsofeden.earth',
-      //     websiteLink: 'https://kidsofeden.earth/',
-      //     tags: ['Shopify', 'Liquid', 'Tailwind', 'React'],
-      //     tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
-      //   },
       {
         title: 'Kizomba dos Saberes',
         description:
@@ -100,23 +82,10 @@ export const projects: ProjectsProps = {
         tags: ['Typescript', 'Tailwind', 'Next.js', 'React'],
         tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
         images: {
-          desktop: KizombaDesktop,
-          mobile: RobbinMobile,
+          desktop: '/kizomba-desktop.png',
+          mobile: '/kizomba-desktop.png',
         },
       },
-      //   {
-      //     title: 'Vegan Checker',
-      //     description:
-      //       'Descrição do projeto, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque interdum orci nec commodo. Mauris non lacus sem. Nullam volutpat purus nibh, ut cursus tellus eleifend quis. In et est felis. Vivamus lacinia dui ut consectetur hendrerit. Fusce ac mi sit amet dolor ultrices cursus. Nullam sapien velit, fringilla nec justo nec, ultricies porta arcu.',
-      //     githubTitle: '/jvfontouraj/nome-projeto',
-      //     githubLink: 'https://github.com/jvfontouraj/nome-projeto',
-      //     websiteTitle: 'site-do-projeto.com',
-      //     websiteLink: 'https://site-do-projeto.com',
-      //     figmaTitle: 'protótipo do projeto',
-      //     figmaLink: 'https://site-do-projeto.com',
-      //     tags: ['Typescript', 'Tailwind', 'Next.js', 'React'],
-      //     tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
-      //   },
     ],
   },
   en: {
@@ -132,8 +101,8 @@ export const projects: ProjectsProps = {
         tags: ['Typescript', 'Tailwind', 'Next.js', 'React'],
         tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
         images: {
-          desktop: ZicoDesktop,
-          mobile: ZicoMobile,
+          desktop: '/zico-desktop.png',
+          mobile: '/zico-mobile.png',
         },
       },
       {
@@ -145,8 +114,8 @@ export const projects: ProjectsProps = {
         tags: ['Typescript', 'Tailwind', 'Next.js', 'React'],
         tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
         images: {
-          desktop: MuseuFlamengoDesktop,
-          mobile: MuseuFlamengoMobile,
+          desktop: '/museuflamengo-desktop.png',
+          mobile: '/museuflamengo-mobile.png',
         },
       },
       {
@@ -158,19 +127,10 @@ export const projects: ProjectsProps = {
         tags: ['Typescript', 'Tailwind', 'Astro', 'React'],
         tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
         images: {
-          desktop: RobbinDesktop,
-          mobile: RobbinMobile,
+          desktop: '/robbin-desktop.png',
+          mobile: '/robbin-mobile.png',
         },
       },
-      //   {
-      //     title: 'Kids of Eden',
-      //     description:
-      //       'Descrição do projeto, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque interdum orci nec commodo. Mauris non lacus sem. Nullam volutpat purus nibh, ut cursus tellus eleifend quis. In et est felis. Vivamus lacinia dui ut consectetur hendrerit. Fusce ac mi sit amet dolor ultrices cursus. Nullam sapien velit, fringilla nec justo nec, ultricies porta arcu.',
-      //     websiteTitle: 'kidsofeden.earth',
-      //     websiteLink: 'https://kidsofeden.earth/',
-      //     tags: ['Shopify', 'Liquid', 'Tailwind', 'React'],
-      //     tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
-      //   },
       {
         title: 'Kizomba dos Saberes',
         description:
@@ -184,24 +144,10 @@ export const projects: ProjectsProps = {
         tags: ['Typescript', 'Tailwind', 'Next.js', 'React'],
         tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
         images: {
-          desktop: KizombaDesktop,
-          mobile: RobbinMobile,
+          desktop: '/kizomba-desktop.png',
+          mobile: '/kizomba-desktop.png',
         },
       },
-
-      //   {
-      //     title: 'Vegan Checker',
-      //     description:
-      //       'Descrição do projeto, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque interdum orci nec commodo. Mauris non lacus sem. Nullam volutpat purus nibh, ut cursus tellus eleifend quis. In et est felis. Vivamus lacinia dui ut consectetur hendrerit. Fusce ac mi sit amet dolor ultrices cursus. Nullam sapien velit, fringilla nec justo nec, ultricies porta arcu.',
-      //     githubTitle: '/jvfontouraj/nome-projeto',
-      //     githubLink: 'https://github.com/jvfontouraj/nome-projeto',
-      //     websiteTitle: 'site-do-projeto.com',
-      //     websiteLink: 'https://site-do-projeto.com',
-      //     figmaTitle: 'protótipo do projeto',
-      //     figmaLink: 'https://site-do-projeto.com',
-      //     tags: ['Typescript', 'Tailwind', 'Next.js', 'React'],
-      //     tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
-      //   },
     ],
   },
 }
@@ -221,8 +167,8 @@ export const portfolio: PortfolioProps = {
     tags: ['Typescript', 'Tailwind', 'Next.js', 'React'],
     tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
     images: {
-      desktop: PortfolioDesktop,
-      mobile: PortfolioDesktop,
+      desktop: '/portfolio-desktop.png',
+      mobile: '/portfolio-desktop.png',
     },
   },
 
@@ -240,8 +186,8 @@ export const portfolio: PortfolioProps = {
     tags: ['Typescript', 'Tailwind', 'Next.js', 'React'],
     tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
     images: {
-      desktop: PortfolioDesktop,
-      mobile: PortfolioDesktop,
+      desktop: '/portfolio-desktop.png',
+      mobile: '/portfolio-desktop.png',
     },
   },
 }
