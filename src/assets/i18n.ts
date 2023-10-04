@@ -211,7 +211,7 @@ export const i18n: I18nProps = {
           role: 'Front-End Developer',
           date: 'Sep 2023 - Currently',
           description:
-            'I currently work as a front-end developer at No Match Studio, focusing on the development of highly converting, creative landing pages with an emphasis on the use of advanced interactive styling techniques. The main tools used include Astro, React, Tailwind, and JavaScript.',
+            'I currently work as a front-end developer at No Match Studio, focusing on the development of highly converting, creative landing pages with an emphasis on the use of advanced interactive styling techniques. The main tools used include Astro, React, Tailwind, and JavaScript. ',
         },
         {
           title: 'Allnft{lab}',
