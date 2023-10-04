@@ -54,12 +54,12 @@ export function Header() {
   return (
     <header
       className={cs(
-        'fixed md:sticky w-screen overflow-hidden top-0 z-50 m-auto scroll-smooth transition-all px-5 md:px-0 py-3 md:py-10 md:h-fit md:shadow-none shadow-2xl backdrop-blur-lg',
+        'fixed top-0 z-50 m-auto w-screen overflow-hidden scroll-smooth px-5 py-3 shadow-2xl backdrop-blur-lg transition-all md:sticky md:h-fit md:px-0 md:py-10 md:shadow-none',
         open ? 'h-screen' : 'h-[80px]',
         theme === 'dark' ? 'bg-neutral-800/80' : 'bg-white/80',
       )}
     >
-      <div className="flex justify-between items-center md:hidden">
+      <div className="flex items-center justify-between md:hidden">
         <div className="flex flex-col">
           <h1 className="text-3xl">João Jardim</h1>
           <h2 className="text-sm font-extralight">
@@ -69,13 +69,13 @@ export function Header() {
         <button onClick={handleToggleMenu} className="relative h-8 w-8">
           <HamburgerMenuIcon
             className={cs(
-              'h-full w-auto absolute top-0 transition-opacity',
+              'absolute top-0 h-full w-auto transition-opacity',
               open ? 'opacity-0' : 'opacity-100',
             )}
           />
           <Cross1Icon
             className={cs(
-              'h-full w-auto absolute top-0 transition-opacity',
+              'absolute top-0 h-full w-auto transition-opacity',
               !open ? 'opacity-0' : 'opacity-100',
             )}
           />
@@ -83,13 +83,13 @@ export function Header() {
       </div>
       <div
         className={cs(
-          'relative flex flex-col overflow-hidden md:overflow-visible my-auto md:[&>*]:h-auto md:h-auto transition-all w-full md:w-screen items-center justify-center md:flex md:flex-row md:opacity-100 md:[&>*]:opacity-100',
+          'relative my-auto flex w-full flex-col items-center justify-center overflow-hidden transition-all md:flex md:h-auto md:w-screen md:flex-row md:overflow-visible md:opacity-100 md:[&>*]:h-auto md:[&>*]:opacity-100',
           open
             ? 'h-full [&>*]:h-auto [&>*]:opacity-100'
             : 'h-0 [&>*]:h-0 [&>*]:opacity-0',
         )}
       >
-        <div className="md:absolute left-0 flex items-center gap-6 md:gap-10 px-10">
+        <div className="left-0 flex items-center gap-6 px-10 md:absolute md:gap-10">
           <Link
             href="https://www.linkedin.com/in/joaovfjardim/"
             target="_blank"
@@ -100,14 +100,14 @@ export function Header() {
             <GitHubLogoIcon className="h-8 w-8" />
           </Link>
         </div>
-        <nav className="flex flex-col gap-5 mt-16 mb-8 md:my-0 md:gap-20 text-lg md:flex-row">
+        <nav className="mb-8 mt-16 flex flex-col gap-5 text-lg md:my-0 md:flex-row md:gap-20">
           {content.map((content, index) => (
             <button key={index} onClick={() => handleNavClick(content.id)}>
               <h2 className="capitalize">{content.title}</h2>
             </button>
           ))}
         </nav>
-        <div className="md:absolute right-0 flex flex-col md:flex-row items-center gap-10 px-10">
+        <div className="right-0 flex flex-col items-center gap-10 px-10 md:absolute md:flex-row">
           <button onClick={handleToggleTheme}>
             {theme === 'light' ? (
               <MoonIcon className="h-8 w-8" />

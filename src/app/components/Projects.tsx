@@ -22,7 +22,7 @@ export function Projects({ lang }: { lang: string }) {
             key={index}
             className="flex h-auto w-full flex-col rounded-[4px] border border-neutral-700 md:flex-row"
           >
-            <div className="flex w-full h-full max-h-[575px] flex-col gap-7 border-r border-neutral-700 p-12">
+            <div className="flex h-full max-h-[575px] w-full flex-col gap-7 border-r border-neutral-700 p-12">
               <div className="flex flex-col gap-3">
                 <h3 className="text-2xl font-semibold">{content.title}</h3>
                 <p className="max-w-[40ch] text-base">{content.description}</p>
@@ -74,13 +74,13 @@ export function Projects({ lang }: { lang: string }) {
                 <span>{content.tools}</span>
               </div>
             </div>
-            <div className="flex w-full h-full max-h-[575px] items-start justify-center overflow-y-scroll">
+            <div className="flex h-full max-h-[575px] w-full items-start justify-center overflow-y-scroll">
               <Image src={content.images.desktop} alt={'project screenshot'} />
             </div>
           </div>
         ))}
 
-        <div className="flex w-fit h-full max-h-[575px] flex-col rounded-[4px] gap-7 border border-neutral-700 p-12 shadow-white shadow-[0px_0px_5px_1px_gba(255,255,255,0.5)]">
+        <div className="flex h-full max-h-[575px] w-fit flex-col gap-7 rounded-[4px] border border-neutral-700 p-12 shadow-[0px_0px_5px_1px_gba(255,255,255,0.5)] shadow-white">
           <div className="flex flex-col gap-3">
             <h3 className="text-2xl font-semibold">{portfolioContent.title}</h3>
             <p className="max-w-[40ch] text-base">
