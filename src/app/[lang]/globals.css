@@ -26,4 +26,25 @@ body {
     @apply  bg-white fill-neutral-800 text-neutral-800 duration-200 dark:bg-neutral-800 dark:fill-white dark:text-white;
   }
 }
+
+
+ /* width */
+ ::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} 
   

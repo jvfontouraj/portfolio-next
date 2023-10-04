@@ -3,12 +3,13 @@ import Link from 'next/link'
 import PerfilImg from '@/assets/perfil.jpg'
 import Image from 'next/image'
 import { DownloadIcon } from '@radix-ui/react-icons'
+import { ScrollToSection } from '@/utils/scrollToSection'
 
 export function Hero({ lang }: { lang: string }) {
   const content = i18n[lang].hero
 
   return (
-    <section className="flex w-full flex-col-reverse gap-10 pb-[110px] md:h-[calc(100vh-110px)] md:flex-row md:gap-0">
+    <section className="flex w-full flex-col-reverse gap-10 pb-[110px] md:h-[calc(100vh-260px)] md:flex-row md:gap-0">
       <div className="flex w-full items-center justify-center md:w-1/2">
         <div className="m-auto flex w-fit flex-col items-start justify-center gap-20">
           <div className="hidden flex-col md:flex">
@@ -26,12 +27,12 @@ export function Hero({ lang }: { lang: string }) {
             >
               {content.cta1} <DownloadIcon width={20} height={20} />
             </Link>
-            <Link
-              href="/#contact"
+            <button
+              onClick={() => ScrollToSection('contact')}
               className="flex h-14 w-56 items-center justify-center gap-3 rounded-[10px] border border-neutral-400 bg-neutral-700 text-lg  text-white shadow-md transition-colors hover:bg-neutral-800 dark:border-neutral-600 dark:bg-white dark:text-neutral-800"
             >
               {content.cta2}
-            </Link>
+            </button>
           </div>
         </div>
       </div>

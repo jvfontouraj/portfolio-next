@@ -6,19 +6,30 @@ import { Experience } from '../components/Experience'
 import { Hero } from '../components/Hero'
 import { Projects } from '../components/Projects'
 import { Skills } from '../components/Skills'
+import { MenuContext } from '@/context/MenuContext'
+import { useContext } from 'react'
+import cs from 'classnames'
 
 export default function Home() {
   const pathName = usePathname()
   const lang = pathName.slice(1)
+  const openMenu = useContext(MenuContext)
 
   return (
-    <main className="mx-6 flex flex-col gap-40 pb-40 md:mx-40">
+    <main
+      className={cs(
+        'mx-6 flex flex-col pb-40 pt-32 md:mx-40 md:pt-0 overflow-x-hidden',
+        openMenu.open ? 'overflow-hidden' : 'overflow-scroll',
+      )}
+    >
       <Hero lang={lang} />
-      <Projects lang={lang} />
-      <Skills lang={lang} />
-      <Experience lang={lang} />
-      <Education lang={lang} />
-      <Contact lang={lang} />
+      <div className="flex flex-col gap-60 [&>section]:scroll-m-40">
+        <Projects lang={lang} />
+        <Skills lang={lang} />
+        <Experience lang={lang} />
+        <Education lang={lang} />
+        <Contact lang={lang} />
+      </div>
     </main>
   )
 }

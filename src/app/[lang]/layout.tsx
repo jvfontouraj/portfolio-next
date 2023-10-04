@@ -3,6 +3,7 @@ import './globals.css'
 import { Sora } from 'next/font/google'
 import { Header } from '../components/Header'
 import { ThemeProvider } from '../theme-provider'
+import { MenuContextProvider } from '@/context/MenuContext'
 
 const sora = Sora({ subsets: ['latin'] })
 // const locale = 'pt'
@@ -23,10 +24,12 @@ export default function RootLayout({
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
       </head>
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-        <body id="body" className="themeConfig relative">
-          <Header />
-          {children}
-        </body>
+        <MenuContextProvider>
+          <body id="body" className="themeConfig relative">
+            <Header />
+            {children}
+          </body>
+        </MenuContextProvider>
       </ThemeProvider>
     </html>
   )
