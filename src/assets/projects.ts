@@ -39,8 +39,8 @@ export const projects: ProjectsProps = {
         tags: ['Typescript', 'Tailwind', 'Next.js', 'React'],
         tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
         images: {
-          desktop: '/zico-desktop.png',
-          mobile: '/zico-mobile.png',
+          desktop: '/images/zico-desktop.png',
+          mobile: '/images/zico-mobile.png',
         },
       },
       {
@@ -52,8 +52,8 @@ export const projects: ProjectsProps = {
         tags: ['Typescript', 'Tailwind', 'Next.js', 'React'],
         tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
         images: {
-          desktop: '/museuflamengo-desktop.png',
-          mobile: '/museuflamengo-mobile.png',
+          desktop: '/images/museuflamengo-desktop.png',
+          mobile: '/images/museuflamengo-mobile.png',
         },
       },
       {
@@ -65,15 +65,15 @@ export const projects: ProjectsProps = {
         tags: ['Typescript', 'Tailwind', 'Astro', 'React'],
         tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
         images: {
-          desktop: '/robbin-desktop.png',
-          mobile: '/robbin-mobile.png',
+          desktop: '/images/robbin-desktop.png',
+          mobile: '/images/robbin-mobile.png',
         },
       },
       {
         title: 'Kizomba dos Saberes',
         description:
           'Descrição do projeto, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque interdum orci nec commodo. Mauris non lacus sem. Nullam volutpat purus nibh, ut cursus tellus eleifend quis. In et est felis. Vivamus lacinia dui ut consectetur hendrerit. Fusce ac mi sit amet dolor ultrices cursus. Nullam sapien velit, fringilla nec justo nec, ultricies porta arcu.',
-        githubTitle: '/jvfontouraj/kizomba-dos-saberes',
+        githubTitle: '/images/jvfontouraj/kizomba-dos-saberes',
         githubLink: 'https://github.com/jvfontouraj/kizomba-dos-saberes',
         websiteTitle: 'kizombadossaberes.com.br',
         websiteLink: 'https://kizombadossaberes.com.br',
@@ -82,8 +82,8 @@ export const projects: ProjectsProps = {
         tags: ['Typescript', 'Tailwind', 'Next.js', 'React'],
         tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
         images: {
-          desktop: '/kizomba-desktop.png',
-          mobile: '/kizomba-desktop.png',
+          desktop: '/images/kizomba-desktop.png',
+          mobile: '/images/kizomba-desktop.png',
         },
       },
     ],
@@ -101,8 +101,8 @@ export const projects: ProjectsProps = {
         tags: ['Typescript', 'Tailwind', 'Next.js', 'React'],
         tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
         images: {
-          desktop: '/zico-desktop.png',
-          mobile: '/zico-mobile.png',
+          desktop: '/images/zico-desktop.png',
+          mobile: '/images/zico-mobile.png',
         },
       },
       {
@@ -114,8 +114,8 @@ export const projects: ProjectsProps = {
         tags: ['Typescript', 'Tailwind', 'Next.js', 'React'],
         tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
         images: {
-          desktop: '/museuflamengo-desktop.png',
-          mobile: '/museuflamengo-mobile.png',
+          desktop: '/images/museuflamengo-desktop.png',
+          mobile: '/images/museuflamengo-mobile.png',
         },
       },
       {
@@ -127,15 +127,15 @@ export const projects: ProjectsProps = {
         tags: ['Typescript', 'Tailwind', 'Astro', 'React'],
         tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
         images: {
-          desktop: '/robbin-desktop.png',
-          mobile: '/robbin-mobile.png',
+          desktop: '/images/robbin-desktop.png',
+          mobile: '/images/robbin-mobile.png',
         },
       },
       {
         title: 'Kizomba dos Saberes',
         description:
           'Descrição do projeto, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque interdum orci nec commodo. Mauris non lacus sem. Nullam volutpat purus nibh, ut cursus tellus eleifend quis. In et est felis. Vivamus lacinia dui ut consectetur hendrerit. Fusce ac mi sit amet dolor ultrices cursus. Nullam sapien velit, fringilla nec justo nec, ultricies porta arcu.',
-        githubTitle: '/jvfontouraj/kizomba-dos-saberes',
+        githubTitle: '/images/jvfontouraj/kizomba-dos-saberes',
         githubLink: 'https://github.com/jvfontouraj/kizomba-dos-saberes',
         websiteTitle: 'kizombadossaberes.com.br',
         websiteLink: 'https://kizombadossaberes.com.br',
@@ -144,8 +144,8 @@ export const projects: ProjectsProps = {
         tags: ['Typescript', 'Tailwind', 'Next.js', 'React'],
         tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
         images: {
-          desktop: '/kizomba-desktop.png',
-          mobile: '/kizomba-desktop.png',
+          desktop: '/images/kizomba-desktop.png',
+          mobile: '/images/kizomba-desktop.png',
         },
       },
     ],
@@ -157,7 +157,7 @@ export const portfolio: PortfolioProps = {
     title: 'Portfólio (esse aqui!)',
     description:
       'Descrição do projeto, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque interdum orci nec commodo. Mauris non lacus sem. Nullam volutpat purus nibh, ut cursus tellus eleifend quis. In et est felis. Vivamus lacinia dui ut consectetur hendrerit. Fusce ac mi sit amet dolor ultrices cursus. Nullam sapien velit, fringilla nec justo nec, ultricies porta arcu.',
-    githubTitle: '/jvfontouraj/portfolio-next',
+    githubTitle: '/images/jvfontouraj/portfolio-next',
     githubLink: 'https://github.com/jvfontouraj/portfolio-next',
     websiteTitle: 'joaojardim.dev',
     websiteLink: 'https://joaojardim.dev',
@@ -167,8 +167,8 @@ export const portfolio: PortfolioProps = {
     tags: ['Typescript', 'Tailwind', 'Next.js', 'React'],
     tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
     images: {
-      desktop: '/portfolio-desktop.png',
-      mobile: '/portfolio-desktop.png',
+      desktop: '/images/portfolio-desktop.png',
+      mobile: '/images/portfolio-desktop.png',
     },
   },
 
@@ -176,7 +176,7 @@ export const portfolio: PortfolioProps = {
     title: 'Portfolio (this one!)',
     description:
       'Descrição do projeto, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque interdum orci nec commodo. Mauris non lacus sem. Nullam volutpat purus nibh, ut cursus tellus eleifend quis. In et est felis. Vivamus lacinia dui ut consectetur hendrerit. Fusce ac mi sit amet dolor ultrices cursus. Nullam sapien velit, fringilla nec justo nec, ultricies porta arcu.',
-    githubTitle: '/jvfontouraj/portfolio-next',
+    githubTitle: '/images/jvfontouraj/portfolio-next',
     githubLink: 'https://github.com/jvfontouraj/portfolio-next',
     websiteTitle: 'joaojardim.dev',
     websiteLink: 'https://joaojardim.dev',
@@ -186,8 +186,8 @@ export const portfolio: PortfolioProps = {
     tags: ['Typescript', 'Tailwind', 'Next.js', 'React'],
     tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
     images: {
-      desktop: '/portfolio-desktop.png',
-      mobile: '/portfolio-desktop.png',
+      desktop: '/images/portfolio-desktop.png',
+      mobile: '/images/portfolio-desktop.png',
     },
   },
 }

@@ -75,7 +75,13 @@ export function Projects({ lang }: { lang: string }) {
               </div>
             </div>
             <div className="flex h-full max-h-[575px] w-full items-start justify-center overflow-y-scroll">
-              <Image src={content.images.desktop} alt={'project screenshot'} />
+              <Image
+                src={content.images.desktop}
+                alt={'project screenshot'}
+                width="1000"
+                height="1000"
+                loading="lazy"
+              />
             </div>
           </div>
         ))}
