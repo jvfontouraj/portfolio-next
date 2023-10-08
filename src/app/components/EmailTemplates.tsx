@@ -17,7 +17,7 @@ export const EmailToUser: React.FC<Readonly<PostTypes>> = ({ content }) => (
 export const EmailToMe: React.FC<Readonly<PostTypes>> = ({ content }) => (
   <div className="flex w-full flex-col gap-10">
     <h1>Contato Portfólio!</h1>
-    <h2>Nome: {content.name}</h2>
+    <h2>Nome: {content.name} </h2>
     <h3>E-mail: {content.email}</h3>
     <p>{content.text}</p>
   </div>
