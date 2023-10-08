@@ -18,12 +18,12 @@ export default function Home() {
   return (
     <main
       className={cs(
-        'flex flex-col overflow-x-hidden px-6 pb-40 pt-32 md:mx-auto md:max-w-7xl md:pt-0',
+        'flex flex-col overflow-x-hidden px-6 pb-40 pt-28 md:mx-auto md:max-w-7xl md:pt-0',
         openMenu.open ? 'overflow-hidden' : 'overflow-scroll',
       )}
     >
       <Hero lang={lang} />
-      <div className="flex flex-col gap-60 [&>section]:scroll-m-40">
+      <div className="flex flex-col gap-40 md:gap-60 [&>section]:scroll-m-40">
         <Projects lang={lang} />
         <Skills lang={lang} />
         <Experience lang={lang} />

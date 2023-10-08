@@ -61,7 +61,7 @@ export function Header() {
     >
       <div className="flex items-center justify-between md:hidden">
         <div className="flex flex-col">
-          <h1 className="text-3xl">João Jardim</h1>
+          <h1 className="text-2xl">João Jardim</h1>
           <h2 className="text-sm font-extralight">
             {i18n[lang].hero.subtitle}
           </h2>

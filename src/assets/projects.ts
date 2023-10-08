@@ -95,11 +95,11 @@ export const projects: ProjectsProps = {
       {
         title: 'Zico: The Legacy Collection',
         description:
-          'Descrição do projeto, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque interdum orci nec commodo. Mauris non lacus sem. Nullam volutpat purus nibh, ut cursus tellus eleifend quis. In et est felis. Vivamus lacinia dui ut consectetur hendrerit. Fusce ac mi sit amet dolor ultrices cursus. Nullam sapien velit, fringilla nec justo nec, ultricies porta arcu.',
+          'I participated in the creation of this significant project by building the frontend, utilizing various APIs and libraries to enable communication between the application, backend, and blockchain network. Alongside the Allnft{lab} team, we developed a complete application with the goal of selling exclusive Zico tokens. For this purpose, we created a landing page with project information and a secure, user-friendly checkout process.',
         websiteTitle: 'zicolegacy.com',
         websiteLink: 'https://www.zicolegacy.com/',
-        tags: ['Typescript', 'Tailwind', 'Next', 'React'],
-        tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
+        tags: ['Next', 'React', 'Typescript', 'Tailwind'],
+        tools: 'Next-Auth, i18n, Radix-ui, React Hook Form, Axios, Zod',
         images: {
           desktop: '/images/zico-desktop.png',
           mobile: '/images/zico-mobile.png',
@@ -108,11 +108,11 @@ export const projects: ProjectsProps = {
       {
         title: 'Museu Flamengo: NFT Pass',
         description:
-          'Descrição do projeto, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque interdum orci nec commodo. Mauris non lacus sem. Nullam volutpat purus nibh, ut cursus tellus eleifend quis. In et est felis. Vivamus lacinia dui ut consectetur hendrerit. Fusce ac mi sit amet dolor ultrices cursus. Nullam sapien velit, fringilla nec justo nec, ultricies porta arcu.',
+          'This was also a major project undertaken by the Allnft{lab} team, where I worked as a frontend developer integrated with the backend and blockchain network. We built a landing page and a comprehensive, transparent, and intuitive checkout system. The aim of this application was to provide information about the reopening of the Museu do Flamengo and its campaign for the sale of exclusive tokens to celebrate this moment.',
         websiteTitle: 'nft.museuflamengo.com',
         websiteLink: 'https://nft.museuflamengo.com/',
-        tags: ['Typescript', 'Tailwind', 'Next', 'React'],
-        tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
+        tags: ['Next', 'React', 'Typescript', 'Tailwind'],
+        tools: 'Next-Auth, i18n, Radix-ui, React Hook Form, Axios, Zod',
         images: {
           desktop: '/images/museuflamengo-desktop.png',
           mobile: '/images/museuflamengo-mobile.png',
@@ -121,11 +121,11 @@ export const projects: ProjectsProps = {
       {
         title: 'Robbin',
         description:
-          'Descrição do projeto, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque interdum orci nec commodo. Mauris non lacus sem. Nullam volutpat purus nibh, ut cursus tellus eleifend quis. In et est felis. Vivamus lacinia dui ut consectetur hendrerit. Fusce ac mi sit amet dolor ultrices cursus. Nullam sapien velit, fringilla nec justo nec, ultricies porta arcu.',
+          "The Robbin project, conceived by No Match Studio, involved the creation of a landing page, an institutional page, and a section dedicated to the company's blog. I contributed to the development of the page's code and the creation of elements in Figma. Our primary focus was to build a website that reflected the company's essence, using vibrant colors and creative animations to capture users' attention and guide them through the content captivatingly.",
         websiteTitle: 'robbin.com.br',
         websiteLink: 'https://robbin.com.br',
-        tags: ['Typescript', 'Tailwind', 'Astro', 'React'],
-        tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
+        tags: ['Astro', 'React', 'Typescript', 'Tailwind'],
+        tools: 'Figma, Radix-ui, React Hook Form, Zod',
         images: {
           desktop: '/images/robbin-desktop.png',
           mobile: '/images/robbin-mobile.png',
@@ -134,15 +134,15 @@ export const projects: ProjectsProps = {
       {
         title: 'Kizomba dos Saberes',
         description:
-          'Descrição do projeto, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque interdum orci nec commodo. Mauris non lacus sem. Nullam volutpat purus nibh, ut cursus tellus eleifend quis. In et est felis. Vivamus lacinia dui ut consectetur hendrerit. Fusce ac mi sit amet dolor ultrices cursus. Nullam sapien velit, fringilla nec justo nec, ultricies porta arcu.',
+          "Kizomba is a project done in partnership with designer Guilherme Moura for a research project at the Federal University of Sergipe. Its objective is to catalog regional cultural manifestations and provide educational materials on the subject for teachers and students. Additionally, we incorporated illustrations from artist Edwan and elements from his works into the website's composition.",
         githubTitle: '/jvfontouraj/kizomba-dos-saberes',
         githubLink: 'https://github.com/jvfontouraj/kizomba-dos-saberes',
         websiteTitle: 'kizombadossaberes.com.br',
         websiteLink: 'https://kizombadossaberes.com.br',
         figmaTitle: 'protótipo do projeto',
         figmaLink: 'https://site-do-projeto.com',
-        tags: ['Typescript', 'Tailwind', 'Next', 'React'],
-        tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
+        tags: ['Next', 'React', 'Typescript', 'Tailwind'],
+        tools: 'Radix-ui',
         images: {
           desktop: '/images/kizomba-desktop.png',
           mobile: '/images/kizomba-desktop.png',
@@ -156,7 +156,7 @@ export const portfolio: PortfolioProps = {
   pt: {
     title: 'Portfólio (esse aqui!)',
     description:
-      'Descrição do projeto, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque interdum orci nec commodo. Mauris non lacus sem. Nullam volutpat purus nibh, ut cursus tellus eleifend quis. In et est felis. Vivamus lacinia dui ut consectetur hendrerit. Fusce ac mi sit amet dolor ultrices cursus. Nullam sapien velit, fringilla nec justo nec, ultricies porta arcu.',
+      'Meu objetivo com esse projeto era conseguir expor minha experiência e habilidades de maneira simples e objetiva, dando foco ao conteúdo e explorando a estilização nos detalhes. O primeiro passo foi dispor minhas ideias de protótipo no Figma e testar diversas formas de chegar no resultado que queria, em seguida, transformei o protótipo em código, utilizando diversas ferramentas.',
     githubTitle: '/jvfontouraj/portfolio-next',
     githubLink: 'https://github.com/jvfontouraj/portfolio-next',
     websiteTitle: 'joaojardim.dev',
@@ -164,8 +164,8 @@ export const portfolio: PortfolioProps = {
     figmaTitle: 'Protótipo do projeto',
     figmaLink:
       'https://www.figma.com/file/DmykHLRUptXr6qlknhMCbQ/Portf%C3%B3lio?type=design&node-id=243-1028&mode=design&t=dJjbhsbx1zWG9Nxr-0',
-    tags: ['Typescript', 'Tailwind', 'Next', 'React'],
-    tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
+    tags: ['Next', 'React', 'Typescript', 'Tailwind'],
+    tools: 'i18n, Resend, React Hook Form, Axios, Zod, Figma',
     images: {
       desktop: '/images/portfolio-desktop.png',
       mobile: '/images/portfolio-desktop.png',
@@ -175,7 +175,7 @@ export const portfolio: PortfolioProps = {
   en: {
     title: 'Portfolio (this one!)',
     description:
-      'Descrição do projeto, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque interdum orci nec commodo. Mauris non lacus sem. Nullam volutpat purus nibh, ut cursus tellus eleifend quis. In et est felis. Vivamus lacinia dui ut consectetur hendrerit. Fusce ac mi sit amet dolor ultrices cursus. Nullam sapien velit, fringilla nec justo nec, ultricies porta arcu.',
+      'My goal with this project was to showcase my experience and skills in a simple and straightforward manner, placing emphasis on content while exploring styling in the details. The first step was to lay out my prototype ideas in Figma and experiment with various approaches to achieve the desired outcome. Next, I translated the prototype into code, utilizing various tools.',
     githubTitle: '/jvfontouraj/portfolio-next',
     githubLink: 'https://github.com/jvfontouraj/portfolio-next',
     websiteTitle: 'joaojardim.dev',
@@ -183,8 +183,8 @@ export const portfolio: PortfolioProps = {
     figmaTitle: 'Protótipo do projeto',
     figmaLink:
       'https://www.figma.com/file/DmykHLRUptXr6qlknhMCbQ/Portf%C3%B3lio?type=design&node-id=243-1028&mode=design&t=dJjbhsbx1zWG9Nxr-0',
-    tags: ['Typescript', 'Tailwind', 'Next', 'React'],
-    tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
+    tags: ['Next', 'React', 'Typescript', 'Tailwind'],
+    tools: 'i18n, Resend, React Hook Form, Axios, Zod, Figma',
     images: {
       desktop: '/images/portfolio-desktop.png',
       mobile: '/images/portfolio-desktop.png',
