@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <main
       className={cs(
-        'mx-6 flex flex-col overflow-x-hidden pb-40 pt-32 md:mx-40 md:pt-0',
+        'flex flex-col overflow-x-hidden px-6 pb-40 pt-32 md:mx-auto md:max-w-7xl md:pt-0',
         openMenu.open ? 'overflow-hidden' : 'overflow-scroll',
       )}
     >

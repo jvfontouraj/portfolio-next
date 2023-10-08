@@ -1,10 +1,27 @@
 import { i18n } from '@/assets/i18n'
 import { GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
 import Link from 'next/link'
+import { useForm, SubmitHandler } from 'react-hook-form'
+import { PostTypes, POST } from '../api/send/route'
 
 export function Contact({ lang }: { lang: string }) {
   const contact = i18n[lang].contact
   const content = contact.content
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<PostTypes>()
+  const onSubmit: SubmitHandler<PostTypes> = (data, e) => {
+    if (e) {
+      e.preventDefault()
+
+      POST(data)
+      console.log(data)
+      console.log(errors)
+    }
+  }
 
   return (
     <section
@@ -12,12 +29,16 @@ export function Contact({ lang }: { lang: string }) {
       className="mx-auto flex h-auto w-full flex-col items-center justify-center gap-10 md:max-w-[75rem]"
     >
       <h2 className="text-center text-4xl">{contact.title}</h2>
-      <form className="mx-auto flex w-full max-w-[830px] flex-col justify-center gap-5">
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="mx-auto flex w-full max-w-[830px] flex-col justify-center gap-5"
+      >
         <div className="flex w-full flex-col gap-3 md:flex-row">
           <div className="flex w-full flex-col">
             <h3>{content.name}</h3>
             <input
               type="text"
+              {...register('content.name', { required: true })}
               placeholder={content.namePlaceholder}
               className="h-12 rounded-[4px] bg-neutral-300 p-3 placeholder-neutral-500 dark:bg-neutral-700"
             />
@@ -26,6 +47,7 @@ export function Contact({ lang }: { lang: string }) {
             <h3>{content.email}</h3>
             <input
               type="text"
+              {...register('content.email', { required: true })}
               placeholder={content.emailPlaceholder}
               className="h-12 rounded-[4px] bg-neutral-300 p-3 placeholder-neutral-500 dark:bg-neutral-700"
             />
@@ -34,6 +56,7 @@ export function Contact({ lang }: { lang: string }) {
         <div className="flex w-full flex-col">
           <h3>{content.message}</h3>
           <textarea
+            {...register('content.text', { required: true })}
             placeholder={content.messagePlaceholder}
             className="h-40 resize-none rounded-[4px] bg-neutral-300 p-3 placeholder-neutral-500 dark:bg-neutral-700"
           />

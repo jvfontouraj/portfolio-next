@@ -100,7 +100,7 @@ export function Header() {
             <GitHubLogoIcon className="h-8 w-8" />
           </Link>
         </div>
-        <nav className="mb-8 mt-16 flex flex-col gap-5 text-lg md:my-0 md:flex-row md:gap-20">
+        <nav className="mb-8 mt-16 flex flex-col gap-5 text-lg md:my-0 md:flex-row md:text-base lg:gap-16 xl:gap-20 xl:text-lg">
           {content.map((content, index) => (
             <button key={index} onClick={() => handleNavClick(content.id)}>
               <h2 className="capitalize">{content.title}</h2>
