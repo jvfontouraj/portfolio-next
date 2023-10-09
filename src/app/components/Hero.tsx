@@ -21,8 +21,9 @@ export function Hero({ lang }: { lang: string }) {
           </p>
           <div className="mx-auto flex flex-col items-center gap-5 md:mx-0 md:flex-row md:gap-10">
             <Link
-              href="/#contact"
+              href="/Curriculo-Desenvolvedor-FrontEnd-Joao-Vitor-Fontoura-Jardim.pdf"
               target="_blank"
+              download
               className="flex h-12 w-44 items-center justify-center gap-3 rounded-[10px] border border-neutral-800 bg-white text-base shadow-md transition-colors hover:bg-neutral-200 dark:border-white dark:bg-neutral-800 md:h-14 md:w-56 md:text-lg"
             >
               {content.cta1} <DownloadIcon width={20} height={20} />
