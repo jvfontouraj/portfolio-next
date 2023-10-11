@@ -3,7 +3,7 @@ import Link from 'next/link'
 import PerfilImg from '@/assets/perfil.jpg'
 import Image from 'next/image'
 import { DownloadIcon } from '@radix-ui/react-icons'
-import { ScrollToSection } from '@/utils/scrollToSection'
+import { ScrollToSection } from '@/lib/scrollToSection'
 
 export function Hero({ lang }: { lang: string }) {
   const content = i18n[lang].hero

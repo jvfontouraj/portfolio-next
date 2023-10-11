@@ -13,7 +13,7 @@ import {
   LinkedInLogoIcon,
 } from '@radix-ui/react-icons'
 import cs from 'classnames'
-import { ScrollToSection } from '@/utils/scrollToSection'
+import { ScrollToSection } from '@/lib/scrollToSection'
 import { MenuContext } from '@/context/MenuContext'
 
 export function Header() {

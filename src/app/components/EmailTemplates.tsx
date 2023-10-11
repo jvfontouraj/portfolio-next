@@ -1,7 +1,12 @@
 import * as React from 'react'
-import { PostTypes } from '../api/send/route'
 
-export const EmailToUser: React.FC<Readonly<PostTypes>> = ({ content }) => (
+interface PostTypes {
+  name: string
+  email: string
+  text: string
+}
+
+export const EmailToUser: React.FC<Readonly<PostTypes>> = (content) => (
   <div className="flex w-full flex-col gap-10">
     <h1>E-mail enviado com sucesso!</h1>
     <p>
@@ -14,7 +19,7 @@ export const EmailToUser: React.FC<Readonly<PostTypes>> = ({ content }) => (
   </div>
 )
 
-export const EmailToMe: React.FC<Readonly<PostTypes>> = ({ content }) => (
+export const EmailToMe: React.FC<Readonly<PostTypes>> = (content) => (
   <div className="flex w-full flex-col gap-10">
     <h1>Contato Portfólio!</h1>
     <h2>Nome: {content.name} </h2>
