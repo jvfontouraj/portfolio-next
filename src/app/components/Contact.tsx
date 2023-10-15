@@ -5,6 +5,7 @@ import { z } from 'zod'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useToast } from '@/app/components/ui/use-toast'
+import axios from 'axios'
 
 export function Contact({ lang }: { lang: string }) {
   const contact = i18n[lang].contact
@@ -28,22 +29,24 @@ export function Contact({ lang }: { lang: string }) {
   })
 
   const onSubmit: SubmitHandler<FormSchema> = async (data: FormSchema) => {
-    await fetch('/api/me', {
-      method: 'POST',
-      body: JSON.stringify({
-        name: data.name,
-        email: data.email,
-        text: data.text,
-      }),
-    })
     try {
-      await fetch('/api/user', {
+      await axios({
+        url: '/api/email/toMe',
         method: 'POST',
-        body: JSON.stringify({
+        data: {
           name: data.name,
           email: data.email,
           text: data.text,
-        }),
+        },
+      })
+      await axios({
+        url: '/api/email/toUser',
+        method: 'POST',
+        data: {
+          name: data.name,
+          email: data.email,
+          text: data.text,
+        },
       })
 
       toast({
@@ -56,7 +59,7 @@ export function Contact({ lang }: { lang: string }) {
         variant: 'destructive',
         title: 'Erro!',
         description:
-          'Ocorreu um erro ao enviar sua mensagem, tente novamente ou entre em contato pelo email: jvfjardim@gmail.com',
+          'Ocorreu um erro ao enviar sua mensagem, tente novamente ou entre em contato pelo email: contato@joaojardim.dev',
       })
     }
   }

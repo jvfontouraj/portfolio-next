@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
 import * as React from 'react'
-import { EmailToUser } from '@/app/components/EmailTemplates'
+import EmailToUser from '@/emails/EmailToUser'
 
 const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY)
 

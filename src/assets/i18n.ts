@@ -74,7 +74,7 @@ export const i18n: I18nProps = {
     ],
     hero: {
       subtitle: 'Desenvolvedor Front-End',
-      text: 'Seja bem vindo(a) ao meu portfólio! Sou um desenvolvedor front-end focado em criar aplicações para web, transformando ideias em projetos criativos e performáticos para que o usuário tenha a melhor experiência possível.',
+      text: 'Seja bem vindo(a) ao meu portfólio! Sou um desenvolvedor front-end focado em criar aplicações para web, transformando ideias em projetos criativos e performáticos que priorizam a experiência do usuário.',
       cta1: 'Currículo.pdf',
       cta2: 'Vamos conversar?',
       imgAlt: 'Foto de perfil',

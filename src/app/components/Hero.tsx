@@ -16,7 +16,7 @@ export function Hero({ lang }: { lang: string }) {
             <h1 className="text-5xl">João Jardim</h1>
             <h2 className="text-xl font-light">{content.subtitle}</h2>
           </div>
-          <p className="text-center text-base md:max-w-[36ch] md:text-left md:text-lg">
+          <p className="text-center text-base md:max-w-[39ch] md:text-left md:text-lg">
             {content.text}
           </p>
           <div className="mx-auto flex flex-col items-center gap-5 md:mx-0 md:flex-row md:gap-10">

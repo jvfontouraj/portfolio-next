@@ -20,6 +20,7 @@ export function Projects({ lang }: { lang: string }) {
         {project.content.map((content, index) => (
           <div
             key={index}
+            id={content.id}
             className="flex h-auto w-full flex-col rounded-[4px] border border-neutral-700 md:flex-row"
           >
             <div className="flex h-full w-full flex-col gap-7 border-r border-neutral-700 p-6 md:max-h-[575px] md:p-12">
