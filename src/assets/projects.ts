@@ -135,7 +135,7 @@ export const projects: ProjectsProps = {
         tags: ['Astro', 'React', 'Typescript', 'Tailwind'],
         tools: 'Figma, Radix-ui, React Hook Form, Zod',
         images: {
-          desktop: '/images/robbin-desktop-comp.webp',
+          desktop: '/images/robbin-desktop1-comp.webp',
           mobile: '/images/robbin-mobile-comp.webp',
         },
       },
