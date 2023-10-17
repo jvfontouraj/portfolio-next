@@ -148,8 +148,6 @@ export const projects: ProjectsProps = {
         githubLink: 'https://github.com/jvfontouraj/kizomba-dos-saberes',
         websiteTitle: 'kizombadossaberes.com.br',
         websiteLink: 'https://kizombadossaberes.com.br',
-        figmaTitle: 'protótipo do projeto',
-        figmaLink: 'https://site-do-projeto.com',
         tags: ['Next', 'React', 'Typescript', 'Tailwind'],
         tools: 'Radix-ui',
         images: {
