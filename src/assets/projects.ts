@@ -74,10 +74,10 @@ export const projects: ProjectsProps = {
         },
       },
       {
-        title: 'Kizomba dos Saberes',
+        title: 'Kizomba dos Saberes (Beta)',
         id: 'kizomba',
         description:
-          'O Kizomba é um projeto feito em parceria com o designer Guilherme Moura para um projeto de pesquisa da Universidade Federal de Sergipe, que tem como objetivo catalogar manifestações culturais regionais e disponibilizar materiais didáticos sobre o tema para professores e alunos. Além disso, utilizamos ilustrações do artista Edwan e elementos de suas obras na composição do site. (projeto em andamento)',
+          'O Kizomba é um projeto feito em parceria com o designer Guilherme Moura para um projeto de pesquisa da Universidade Federal de Sergipe, que tem como objetivo catalogar manifestações culturais regionais e disponibilizar materiais didáticos sobre o tema para professores e alunos. Além disso, utilizamos ilustrações do artista Edwan e elementos de suas obras na composição do site.',
         githubTitle: '/jvfontouraj/kizomba-dos-saberes',
         githubLink: 'https://github.com/jvfontouraj/kizomba-dos-saberes',
         websiteTitle: 'kizombadossaberes.com.br',
@@ -89,6 +89,22 @@ export const projects: ProjectsProps = {
         images: {
           desktop: '/images/kizomba-desktop-comp.webp',
           mobile: '/images/kizomba-desktop-comp.webp',
+        },
+      },
+      {
+        title: 'Vegano Check BR (Beta)',
+        id: 'vegano',
+        description:
+          'Projeto fullstack autoral que tem como objetivo auxiliar veganos brasileiros a consultarem se certos ingredientes são de origem animal ou vegetal. O frontend foi feito com React e o backend com NestJs, integrando banco de dados para sistema de login e API com dados dos ingredientes.',
+        githubTitle: '/jvfontouraj/vegano-check-frontend',
+        githubLink: 'https://github.com/jvfontouraj/vegano-check-frontend',
+        websiteTitle: 'vegano-check',
+        websiteLink: 'https://vegano-check.vercel.app',
+        tags: ['React', 'Nest', 'Node', 'Typescript'],
+        tools: 'MongoDB, Zod, React Hook Form, Axios',
+        images: {
+          desktop: '/images/vegano-check(1).webp',
+          mobile: '',
         },
       },
     ],
@@ -143,7 +159,7 @@ export const projects: ProjectsProps = {
         title: 'Kizomba dos Saberes',
         id: 'kizomba',
         description:
-          "Kizomba is a project done in partnership with designer Guilherme Moura for a research project at the Federal University of Sergipe. Its objective is to catalog regional cultural manifestations and provide educational materials on the subject for teachers and students. Additionally, we incorporated illustrations from artist Edwan and elements from his works into the website's composition. (work in progress)",
+          "Kizomba is a project done in partnership with designer Guilherme Moura for a research project at the Federal University of Sergipe. Its objective is to catalog regional cultural manifestations and provide educational materials on the subject for teachers and students. Additionally, we incorporated illustrations from artist Edwan and elements from his works into the website's composition.",
         githubTitle: '/jvfontouraj/kizomba-dos-saberes',
         githubLink: 'https://github.com/jvfontouraj/kizomba-dos-saberes',
         websiteTitle: 'kizombadossaberes.com.br',
@@ -153,6 +169,22 @@ export const projects: ProjectsProps = {
         images: {
           desktop: '/images/kizomba-desktop-comp.webp',
           mobile: '/images/kizomba-desktop-comp.webp',
+        },
+      },
+      {
+        title: 'Vegano Check BR (Beta)',
+        id: 'vegano',
+        description:
+          'Authorial full-stack project designed to assist Brazilian vegans in checking whether certain ingredients are of animal or plant origin. The frontend was developed using React, and the backend using NestJs, integrating a database for the login system and an API with ingredient data.',
+        githubTitle: '/jvfontouraj/vegano-check-frontend',
+        githubLink: 'https://github.com/jvfontouraj/vegano-check-frontend',
+        websiteTitle: 'vegano-check',
+        websiteLink: 'https://vegano-check.vercel.app',
+        tags: ['React', 'Nest', 'Node', 'Typescript'],
+        tools: 'MongoDB, Zod, React Hook Form, Axios',
+        images: {
+          desktop: '/images/vegano-check(1).webp',
+          mobile: '',
         },
       },
     ],
