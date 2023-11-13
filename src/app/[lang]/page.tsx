@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <main
       className={cs(
-        'flex flex-col overflow-x-hidden px-6 pb-40 pt-28 md:mx-auto md:max-w-7xl md:overflow-y-scroll md:pt-0',
+        'flex h-full flex-col overflow-hidden px-6 pb-40 pt-28 md:mx-auto md:max-w-7xl md:pt-0',
       )}
     >
       <Hero lang={lang} />

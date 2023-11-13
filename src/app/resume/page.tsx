@@ -5,7 +5,7 @@ const Resume = () => {
   return (
     <div className="m-auto flex aspect-[0.70695553] h-screen flex-col justify-center gap-10 border p-8">
       <div className="flex flex-col items-center">
-        <h1 className="text-xl font-semibold leading-none">
+        <h1 className="text-lg font-semibold leading-none 2xl:text-xl">
           João Vitor Fontoura Jardim
         </h1>
         <h2 className="text-lg  leading-none">Desenvolvedor Front-End</h2>

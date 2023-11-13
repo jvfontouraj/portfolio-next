@@ -15,7 +15,7 @@ export function Projects({ lang }: { lang: string }) {
 
   return (
     <section id="projects" className="flex flex-col justify-center gap-10">
-      <h2 className="text-center text-3xl md:text-4xl">{project.title}</h2>
+      <h2 className="text-center text-3xl 2xl:text-4xl">{project.title}</h2>
       <div className="mx-auto flex h-auto w-full flex-col items-center justify-center gap-10 md:max-w-[75rem]">
         {project.content.map((content, index) => (
           <div
@@ -25,7 +25,7 @@ export function Projects({ lang }: { lang: string }) {
           >
             <div className="flex h-full w-full flex-col gap-7 border-r border-neutral-700 p-6 md:max-h-[575px] md:p-12">
               <div className="flex flex-col gap-3">
-                <h3 className="text-xl font-semibold md:text-2xl">
+                <h3 className="text-lg font-semibold md:text-2xl 2xl:text-xl">
                   {content.title}
                 </h3>
                 <p className="w-full text-sm md:max-w-[40ch] md:text-base">
@@ -93,7 +93,7 @@ export function Projects({ lang }: { lang: string }) {
 
         <div className="flex h-fit w-full flex-col gap-7 rounded-[4px] border border-neutral-700 p-6 shadow-[0px_0px_5px_1px_gba(255,255,255,0.5)] shadow-white md:h-full md:max-h-[575px] md:w-fit md:p-12">
           <div className="flex flex-col gap-3">
-            <h3 className="text-xl font-semibold md:text-2xl">
+            <h3 className="text-lg font-semibold md:text-2xl 2xl:text-xl">
               {portfolioContent.title}
             </h3>
             <p className="w-full text-sm md:max-w-[40ch] md:text-base">

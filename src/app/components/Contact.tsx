@@ -69,7 +69,7 @@ export function Contact({ lang }: { lang: string }) {
       id="contact"
       className="mx-auto flex h-auto w-full flex-col items-center justify-center gap-10 md:max-w-[75rem]"
     >
-      <h2 className="text-center text-3xl md:text-4xl">{contact.title}</h2>
+      <h2 className="text-center text-3xl 2xl:text-4xl">{contact.title}</h2>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="mx-auto flex w-full max-w-[830px] flex-col justify-center gap-5"

@@ -54,9 +54,9 @@ export function Header() {
   return (
     <header
       className={cs(
-        'fixed top-0 z-50 m-auto w-screen overflow-hidden scroll-smooth px-5 py-3 shadow-2xl backdrop-blur-lg transition-all md:sticky md:h-fit md:px-0 md:py-10 md:shadow-none',
+        'fixed top-0 z-50 m-auto w-screen overflow-hidden scroll-smooth px-5 py-3 shadow-2xl backdrop-blur-lg transition-all md:sticky md:h-fit md:px-0 md:py-7 md:shadow-none 2xl:py-10',
         open ? 'h-screen' : 'h-[80px]',
-        theme === 'dark' ? 'bg-neutral-800/80' : 'bg-white/80',
+        theme === 'dark' ? 'bg-neutral-800/90' : 'bg-white/80',
       )}
     >
       <div className="flex items-center justify-between md:hidden">
@@ -94,13 +94,13 @@ export function Header() {
             href="https://www.linkedin.com/in/joaovfjardim/"
             target="_blank"
           >
-            <LinkedInLogoIcon className="h-8 w-8" />
+            <LinkedInLogoIcon className="h-6 w-6 2xl:h-8 2xl:w-8" />
           </Link>
           <Link href="https://github.com/jvfontouraj" target="_blank">
-            <GitHubLogoIcon className="h-8 w-8" />
+            <GitHubLogoIcon className="h-6 w-6 2xl:h-8 2xl:w-8" />
           </Link>
         </div>
-        <nav className="mb-8 mt-16 flex flex-col gap-5 text-lg md:my-0 md:flex-row md:text-base lg:gap-16 xl:gap-20 xl:text-lg">
+        <nav className="mb-8 mt-16 flex flex-col gap-5 text-lg md:my-0 md:flex-row md:text-base lg:gap-16 xl:gap-20 2xl:text-lg">
           {content.map((content, index) => (
             <button key={index} onClick={() => handleNavClick(content.id)}>
               <h2 className="capitalize">{content.title}</h2>
@@ -110,14 +110,14 @@ export function Header() {
         <div className="right-0 flex flex-col items-center gap-10 px-10 md:absolute md:flex-row">
           <button onClick={handleToggleTheme}>
             {theme === 'light' ? (
-              <MoonIcon className="h-8 w-8" />
+              <MoonIcon className="h-6 w-6 2xl:h-8 2xl:w-8" />
             ) : (
-              <Sun className="h-8 w-8" />
+              <Sun className="h-6 w-6 2xl:h-8 2xl:w-8" />
             )}
           </button>
 
           <Link href={pathName === '/pt' ? '/en' : '/pt'}>
-            <button className="h-12 w-16 rounded-lg border border-neutral-800 text-xl uppercase dark:border-white">
+            <button className="h-10 w-14 rounded-lg border border-neutral-800 text-lg uppercase dark:border-white 2xl:h-12 2xl:w-16 2xl:text-xl">
               {pathName === '/pt' ? 'en' : 'pt'}
             </button>
           </Link>
