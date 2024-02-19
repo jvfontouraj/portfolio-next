@@ -89,9 +89,6 @@ export const i18n: I18nProps = {
         'Typescript',
         'React',
         'Next.js',
-        'Node',
-        'Nest',
-        'MongoDB',
         'Astro',
         'Tailwind',
         'Stitches',
@@ -115,11 +112,18 @@ export const i18n: I18nProps = {
       title: 'Experiência',
       content: [
         {
+          title: 'Wilson, Sons',
+          role: 'Estagiário TI RH',
+          date: 'Dez 2023 - Atualmente',
+          description:
+            'No momento estou estagiando na Wilson, Sons Serviços Marítimos, onde atuo no desenvolvimento de aplicações web e manutenção de sistemas internos da área de Recursos Humanos da empresa. Minhas principais responsabilidades envolvem a criação e desnvolvimento de interfaces, além de integração com APIs e banco de dados. As principais tecnologias utilizadas são Next.js, Typescript, PL/SQL e Python.',
+        },
+        {
           title: 'No Match',
           role: 'Desenvolvedor Front-End',
-          date: 'Set 2023 - Atualmente',
+          date: 'Set 2023 - Nov 2023',
           description:
-            'Atualmente atuo como desenvolvedor front-end no estúdio No Match, focando no desenvolvimento de landing pages criativas de alta conversão com foco no uso de técnicas avançadas de estilização interativas. As principais ferramentas utilizadas são Astro, React, Tailwind e Javascript.',
+            'Atuei como desenvolvedor front-end no estúdio No Match, focado no desenvolvimento de landing pages criativas de alta conversão com foco no uso de técnicas avançadas de estilização interativas. As principais ferramentas utilizadas foram Astro, React, Tailwind e Javascript.',
         },
         {
           title: 'Allnft{lab}',
@@ -189,9 +193,6 @@ export const i18n: I18nProps = {
         'Typescript',
         'React',
         'Next.js',
-        'Node',
-        'Nest',
-        'MongoDB',
         'Astro',
         'Tailwind',
         'Stitches',
@@ -213,11 +214,18 @@ export const i18n: I18nProps = {
       title: 'Experience',
       content: [
         {
+          title: 'Wilson, Sons',
+          role: 'IT HR Intern',
+          date: 'Dec 2023 - Present',
+          description:
+            "I am currently interning at Wilson, Sons Maritime Services, where I work on the development of web applications and maintenance of internal systems in the company's Human Resources area. My main responsibilities involve creating and developing interfaces, as well as integrating with APIs and databases. The main technologies used are Next.js, Typescript, PL/SQL, and Python.",
+        },
+        {
           title: 'No Match',
           role: 'Front-End Developer',
-          date: 'Sep 2023 - Currently',
+          date: 'Sep 2023 - Nov 2023',
           description:
-            'I currently work as a front-end developer at No Match Studio, focusing on the development of highly converting, creative landing pages with an emphasis on the use of advanced interactive styling techniques. The main tools used include Astro, React, Tailwind, and JavaScript. ',
+            'I worked as a front-end developer at the No Match studio, focused on developing creative, high-conversion landing pages with a focus on using advanced interactive styling techniques. The main tools used were Astro, React, Tailwind, and Javascript.',
         },
         {
           title: 'Allnft{lab}',

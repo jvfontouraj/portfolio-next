@@ -5,21 +5,21 @@ const Resume = () => {
   return (
     <div className="m-auto flex aspect-[0.70695553] h-screen flex-col justify-center gap-10 border p-8">
       <div className="flex flex-col items-center">
-        <h1 className="text-lg font-semibold leading-none 2xl:text-xl">
+        <h1 className="text-xl font-semibold leading-none">
           João Vitor Fontoura Jardim
         </h1>
         <h2 className="text-lg  leading-none">Desenvolvedor Front-End</h2>
       </div>
       <p className="text-xs">
-        Sou um desenvolvedor front-end focado em criar aplicações para web,
-        transformando ideias em projetos criativos e performáticos para que o
-        usuário tenha a melhor experiência possível. Iniciei minha jornada na
-        programação em 2020 por diversão até que em 2022 decidi fazer uma
-        transição de carreira e me dedicar exclusivamente a trabalhar na área.
-        Desde 2022 venho atuando como freelancer e na mesma época entrei para a
-        graduação de Sistmas de Informação, em 2023 consegui minha primeira
-        oportunidade profissional na Allnftlab e hoje atuo como desenvolvedor
-        Front-End na No Match.
+        Sou um desenvolvedor front-end com mais de um ano e meio de experiência
+        na área. Meu foco é criar aplicações para web, transformando ideias em
+        projetos criativos e performáticos, tendo sempre em vista uma boa
+        experiência do usuário. Minha jornada começou no final de 2022, quando
+        iniciei o curso de Sistemas de Informação e passei a trabalhar
+        exclusivamente como desenvolvedor, atuando como freelancer. Em 2023
+        consegui minha primeira oportunidade profissional como desenvolvedor
+        Front-End na Allnftlab, posteriormente atuei na No Match e hoje estou
+        estagiando na empresa Wilson, Sons Serviços Marítimos na área de TI RH.
       </p>
       <div>
         <h3 className="font-semibold uppercase">Contato</h3>
@@ -62,11 +62,28 @@ const Resume = () => {
       </div>
       <div>
         <h3 className="font-semibold uppercase">Experiência</h3>
-        <ul className="flex flex-col gap-2">
+        <ul className="flex flex-col gap-5">
+          <li>
+            <h4 className="text-sm font-semibold">
+              Wilson, Sons Serviços Marítimos
+            </h4>
+            <h5 className="text-xs">
+              Estagiário TI RH | Dezembro 2023 - Atualmente
+            </h5>
+            <p className="mt-1 text-xs">
+              No momento estou estagiando na Wilson, Sons Serviços Marítimos,
+              onde atuo no desenvolvimento de aplicações web e manutenção de
+              sistemas internos da área de Recursos Humanos da empresa. Minhas
+              principais responsabilidades envolvem a criação e desnvolvimento
+              de interfaces, além de integração com APIs e banco de dados. As
+              principais tecnologias utilizadas são Next.js, Typescript, PL/SQL
+              e Python.
+            </p>
+          </li>
           <li>
             <h4 className="text-sm font-semibold">No Match</h4>
             <h5 className="text-xs">
-              Desenvolvedor Front-End | Setembro 2023 - Atualmente
+              Desenvolvedor Front-End | Setembro 2023 - Novembro 2023
             </h5>
             <h5 className="text-xs">
               Projetos:{' '}
@@ -79,11 +96,11 @@ const Resume = () => {
               </Link>
             </h5>
             <p className="mt-1 text-xs">
-              Atualmente atuo como desenvolvedor front-end no estúdio No Match,
-              focando no desenvolvimento de landing pages criativas de alta
-              conversão com foco no uso de técnicas avançadas de estilização
-              interativas. As principais ferramentas utilizadas são Astro,
-              React, Tailwind e Javascript.
+              Atuei como desenvolvedor front-end no estúdio No Match, focado no
+              desenvolvimento de landing pages criativas de alta conversão com
+              foco no uso de técnicas avançadas de estilização interativas. As
+              principais ferramentas utilizadas foram Astro, React, Tailwind e
+              Javascript.
             </p>
           </li>
           <li>
@@ -110,15 +127,12 @@ const Resume = () => {
               </Link>
             </h5>
             <p className="mt-1 text-xs">
-              No período de Março a Agosto de 2023, ocupei o cargo de
-              desenvolvedor front-end na Allnftlab, laboratório criativo de
-              tecnologias em blockchain localizado no Rio de Janeiro. Minhas
-              principais responsabilidades eram desenvolver lading pages e
-              processos de checkout utilizando tecnologias como Next.js,
-              Typescript e Tailwind, o que envolvia consumo de APIs e integração
-              com o backend e rede blockchain. Colaborei estreitamente com time
-              de tecnologia e design, atuando em projetos inovadores focados na
-              criatividade, segurança e conversão.
+              Ocupei o cargo de desenvolvedor front-end na Allnftlab,
+              laboratório criativo de tecnologias em blockchain localizado no
+              Rio de Janeiro. Minhas principais responsabilidades eram
+              desenvolver lading pages e processos de checkout utilizando
+              tecnologias como Next.js, Typescript e Tailwind, o que envolvia
+              consumo de APIs e integração com o backend e rede blockchain.
             </p>
           </li>
           <li>
@@ -139,9 +153,7 @@ const Resume = () => {
               desenvolvimento web, com foco principal em tecnologias como
               Typescript, Next.js e Tailwind. Durante esse período, tive a
               oportunidade de colaborar com diversos clientes, traduzindo suas
-              visões em soluções práticas e eficazes. Minha jornada tem sido
-              marcada por desafios técnicos estimulantes e um compromisso sólido
-              em entregar resultados que superem as expectativas.
+              visões em soluções práticas e eficazes.
             </p>
           </li>
         </ul>
@@ -149,19 +161,19 @@ const Resume = () => {
       <div>
         <h3 className="font-semibold uppercase">Habilidades e Ferramentas</h3>
         <p className="text-xs">
-          React, Next, Javascript, Typescript, Tailwind, Stitches,
-          Styled-Components, Astro, Git / Github, Figma, Inglês, Métodos Ágeis,
-          Scrum.
+          React, Next, Javascript, Typescript, PL/SQL, Banco de Dados Relacional
+          e Não Relacional, Python, Tailwind, Stitches, Styled-Components,
+          Astro, Git / Github, Figma, Inglês, Métodos Ágeis, Scrum.
         </p>
       </div>
       <div>
         <h3 className="font-semibold uppercase">Educação</h3>
-        <ul className="flex flex-col gap-2 text-xs">
-          <li>
+        <ul className="flex gap-2 text-xs">
+          <li className="w-full">
             <h4 className="font-semibold">Sistemas de Informação | UNESA</h4>
             <h4>2022 - Atualmente</h4>
           </li>
-          <li>
+          <li className="w-full">
             <h4 className="font-semibold">Ensino Médio | Escola Parque</h4>
             <h4>2012 - 2014</h4>
           </li>

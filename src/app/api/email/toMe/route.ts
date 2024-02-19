@@ -11,7 +11,7 @@ export async function POST(request: Request) {
   try {
     const emailToMe = await resend.sendEmail({
       from: 'contato@joaojardim.dev',
-      to: ['contato@joaojardim.dev', 'joao@joaojardim.dev'],
+      to: ['jvfjardim@gmail.com'],
       subject: 'Contato Portfólio',
       react: EmailToMe(content) as React.ReactElement,
     })
