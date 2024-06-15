@@ -1,12 +1,20 @@
 'use client'
 import Link from 'next/link'
 import MoonIcon from '@/assets/moon.svg'
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 import { usePathname } from 'next/navigation'
 import { i18n } from '@/assets/i18n'
 import { Sun } from '@phosphor-icons/react'
-import { GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
+import {
+  Cross1Icon,
+  GitHubLogoIcon,
+  HamburgerMenuIcon,
+  LinkedInLogoIcon,
+} from '@radix-ui/react-icons'
+import cs from 'classnames'
+import { ScrollToSection } from '@/lib/scrollToSection'
+import { MenuContext } from '@/context/MenuContext'
 
 export function Header() {
   const [mounted, setMounted] = useState(false)
@@ -14,67 +22,104 @@ export function Header() {
   const pathName = usePathname()
   const lang = pathName.slice(1)
   const content = i18n[lang].nav
+  const { open, handleToggleMenu } = useContext(MenuContext)
 
   useEffect(() => {
     setMounted(true)
 
     if (systemTheme === 'dark') {
       setTheme('dark')
-      console.log('systemTheme', systemTheme)
     } else if (systemTheme === 'light') {
       setTheme('light')
-      console.log('systemTheme', systemTheme)
     } else {
       setTheme('dark')
-      console.log('systemTheme', systemTheme)
     }
   }, [setTheme, systemTheme])
 
   function handleToggleTheme() {
     setTheme(theme === 'dark' ? 'light' : 'dark')
-    console.log('theme', theme)
   }
 
   if (!mounted) {
     return null
   }
 
+  function handleNavClick(id: string) {
+    handleToggleMenu()
+    setTimeout(() => {
+      ScrollToSection(id)
+    }, 100)
+  }
+
   return (
-    <header className="sticky top-0 z-50 m-auto py-10 backdrop-blur-lg">
-      <div className="flex flex-col md:hidden">
-        <h1 className="text-3xl">João Jardim</h1>
-        <h2 className="text-sm font-extralight">{i18n[lang].hero.subtitle}</h2>
+    <header
+      className={cs(
+        'fixed top-0 z-50 m-auto w-screen overflow-hidden scroll-smooth px-5 py-3 shadow-2xl backdrop-blur-lg transition-all md:sticky md:h-fit md:px-0 md:py-7 md:shadow-none 2xl:py-10',
+        open ? 'h-screen' : 'h-16',
+        theme === 'dark' ? 'bg-neutral-800/90' : 'bg-white/80',
+      )}
+    >
+      <div className="flex items-center justify-between md:hidden">
+        <div className="flex flex-col">
+          <h1 className="text-base">João Jardim</h1>
+          <h2 className="text-xs font-extralight">
+            {i18n[lang].hero.subtitle}
+          </h2>
+        </div>
+        <button onClick={handleToggleMenu} className="relative h-4 w-4">
+          <HamburgerMenuIcon
+            className={cs(
+              'absolute top-0 h-full w-auto transition-opacity',
+              open ? 'opacity-0' : 'opacity-100',
+            )}
+          />
+          <Cross1Icon
+            className={cs(
+              'absolute top-0 h-full w-auto transition-opacity',
+              !open ? 'opacity-0' : 'opacity-100',
+            )}
+          />
+        </button>
       </div>
-      <div className="relative hidden h-auto w-screen items-center justify-center md:flex">
-        <div className="absolute left-0 flex items-center gap-10 px-10">
+      <div
+        className={cs(
+          'relative my-auto flex w-full flex-col items-center justify-center overflow-hidden transition-all md:flex md:h-auto md:w-screen md:flex-row md:overflow-visible md:opacity-100 md:[&>*]:h-auto md:[&>*]:opacity-100',
+          open
+            ? 'h-full [&>*]:h-auto [&>*]:opacity-100'
+            : 'h-0 [&>*]:h-0 [&>*]:opacity-0',
+        )}
+      >
+        <div className="left-0 flex items-center gap-6 px-10 md:absolute md:gap-10">
           <Link
             href="https://www.linkedin.com/in/joaovfjardim/"
             target="_blank"
           >
-            <LinkedInLogoIcon className="h-8 w-8" />
+            <LinkedInLogoIcon className="h-6 w-6 2xl:h-8 2xl:w-8" />
           </Link>
           <Link href="https://github.com/jvfontouraj" target="_blank">
-            <GitHubLogoIcon className="h-8 w-8" />
+            <GitHubLogoIcon className="h-6 w-6 2xl:h-8 2xl:w-8" />
           </Link>
         </div>
-        <nav className="flex gap-20 text-lg">
+        <nav className="mb-8 mt-16 flex flex-col gap-5 text-lg md:my-0 md:flex-row md:text-base lg:gap-16 xl:gap-20 2xl:text-lg">
           {content.map((content, index) => (
-            <Link key={index} href={`#${content.id}`}>
-              <h2 className="capitalize">{content.title}</h2>
-            </Link>
+            <button key={index} onClick={() => handleNavClick(content.id)}>
+              <h2 className="border-b border-b-transparent capitalize transition-colors duration-300 hover:border-b-white">
+                {content.title}
+              </h2>
+            </button>
           ))}
         </nav>
-        <div className="absolute right-0 flex items-center gap-10 px-10">
+        <div className="right-0 flex flex-col items-center gap-10 px-10 md:absolute md:flex-row">
           <button onClick={handleToggleTheme}>
             {theme === 'light' ? (
-              <MoonIcon className="h-8 w-8" />
+              <MoonIcon className="h-6 w-6 2xl:h-8 2xl:w-8" />
             ) : (
-              <Sun className="h-8 w-8" />
+              <Sun className="h-6 w-6 2xl:h-8 2xl:w-8" />
             )}
           </button>
 
           <Link href={pathName === '/pt' ? '/en' : '/pt'}>
-            <button className="h-12 w-16 rounded-lg border border-neutral-800 text-xl uppercase dark:border-white">
+            <button className="h-10 w-14 rounded-lg border border-neutral-800 text-lg uppercase dark:border-white 2xl:h-12 2xl:w-16 2xl:text-xl">
               {pathName === '/pt' ? 'en' : 'pt'}
             </button>
           </Link>

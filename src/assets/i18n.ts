@@ -1,14 +1,5 @@
 interface ContactProps {
   title: string
-  content: {
-    name: string
-    namePlaceholder: string
-    email: string
-    emailPlaceholder: string
-    message: string
-    messagePlaceholder: string
-    send: string
-  }
 }
 
 interface EducationContentProps {
@@ -39,26 +30,6 @@ interface SkillsProps {
   content: string[]
 }
 
-interface ProjectProps {
-  title: string
-  media?: object
-  description: string
-  githubTitle?: string
-  githubLink?: string
-  websiteTitle?: string
-  websiteLink?: string
-  figmaTitle?: string
-  figmaLink?: string
-  tags: string[]
-  tools: string
-}
-
-interface ProjectsProps {
-  title: string
-  toolsTitle: string
-  content: ProjectProps[]
-}
-
 interface HeroProps {
   subtitle: string
   text: string
@@ -76,7 +47,6 @@ interface I18nProps {
   [key: string]: {
     nav: NavProps[]
     hero: HeroProps
-    projects: ProjectsProps
     skills: SkillsProps
     experience: ExperienceProps
     education: EducationProps
@@ -95,56 +65,12 @@ export const i18n: I18nProps = {
     ],
     hero: {
       subtitle: 'Desenvolvedor Front-End',
-      text: 'Texto sobre mim, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque interdum orci nec commodo. Mauris non lacus sem. Nullam volutpat purus nibh, ut cursus tellus eleifend quis. In et est felis. Vivamus lacinia dui ut consectetur hendrerit. Fusce ac mi sit amet dolor ultrices cursus. Nullam sapien velit, fringilla nec justo nec, ultricies porta arcu.',
+      text: 'Seja bem vindo(a) ao meu portfólio! Sou um desenvolvedor front-end focado em criar aplicações para web, transformando ideias em projetos criativos e performáticos que priorizam a experiência do usuário.',
       cta1: 'Currículo.pdf',
       cta2: 'Vamos conversar?',
       imgAlt: 'Foto de perfil',
     },
-    projects: {
-      title: 'Projetos',
-      toolsTitle: 'Principais ferramentas',
-      content: [
-        {
-          title: 'Nome do Projeto 1',
-          description:
-            'Descrição do projeto, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque interdum orci nec commodo. Mauris non lacus sem. Nullam volutpat purus nibh, ut cursus tellus eleifend quis. In et est felis. Vivamus lacinia dui ut consectetur hendrerit. Fusce ac mi sit amet dolor ultrices cursus. Nullam sapien velit, fringilla nec justo nec, ultricies porta arcu.',
-          githubTitle: '/jvfontouraj/nome-projeto',
-          githubLink: 'https://github.com/jvfontouraj/nome-projeto',
-          websiteTitle: 'site-do-projeto.com',
-          websiteLink: 'https://site-do-projeto.com',
-          figmaTitle: 'protótipo do projeto',
-          figmaLink: 'https://site-do-projeto.com',
-          tags: ['Typescript', 'Tailwind', 'Next.js', 'React'],
-          tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
-        },
-        {
-          title: 'Nome do Projeto 1',
-          description:
-            'Descrição do projeto, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque interdum orci nec commodo. Mauris non lacus sem. Nullam volutpat purus nibh, ut cursus tellus eleifend quis. In et est felis. Vivamus lacinia dui ut consectetur hendrerit. Fusce ac mi sit amet dolor ultrices cursus. Nullam sapien velit, fringilla nec justo nec, ultricies porta arcu.',
-          githubTitle: '/jvfontouraj/nome-projeto',
-          githubLink: 'https://github.com/jvfontouraj/nome-projeto',
-          websiteTitle: 'site-do-projeto.com',
-          websiteLink: 'https://site-do-projeto.com',
-          figmaTitle: 'protótipo do projeto',
-          figmaLink: 'https://site-do-projeto.com',
-          tags: ['Typescript', 'Tailwind', 'Next.js', 'React'],
-          tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
-        },
-        {
-          title: 'Nome do Projeto 1',
-          description:
-            'Descrição do projeto, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque interdum orci nec commodo. Mauris non lacus sem. Nullam volutpat purus nibh, ut cursus tellus eleifend quis. In et est felis. Vivamus lacinia dui ut consectetur hendrerit. Fusce ac mi sit amet dolor ultrices cursus. Nullam sapien velit, fringilla nec justo nec, ultricies porta arcu.',
-          githubTitle: '/jvfontouraj/nome-projeto',
-          githubLink: 'https://github.com/jvfontouraj/nome-projeto',
-          websiteTitle: 'site-do-projeto.com',
-          websiteLink: 'https://site-do-projeto.com',
-          figmaTitle: 'protótipo do projeto',
-          figmaLink: 'https://site-do-projeto.com',
-          tags: ['Typescript', 'Tailwind', 'Next.js', 'React'],
-          tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
-        },
-      ],
-    },
+
     skills: {
       title: 'Habilidades e Ferramentas',
       content: [
@@ -154,7 +80,9 @@ export const i18n: I18nProps = {
         'Typescript',
         'React',
         'Next.js',
+        'Astro',
         'Tailwind',
+        'Stitches',
         'Styled-Components',
         'i18n',
         'Figma',
@@ -162,9 +90,12 @@ export const i18n: I18nProps = {
         'Github',
         'Zod',
         'React Hook-Form',
-        'Stitches',
+        'React Email',
+        'Resend',
         'CVA',
         'Axios',
+        'Scrum',
+        'Metodologias Ágeis',
         'Inglês',
       ],
     },
@@ -172,17 +103,31 @@ export const i18n: I18nProps = {
       title: 'Experiência',
       content: [
         {
+          title: 'Wilson, Sons',
+          role: 'Estagiário TI RH',
+          date: 'Dez 2023 - Atualmente',
+          description:
+            'No momento estou estagiando na Wilson, Sons Serviços Marítimos, onde atuo no desenvolvimento de aplicações web e manutenção de sistemas internos da área de Recursos Humanos da empresa. Minhas principais responsabilidades envolvem a criação e desnvolvimento de interfaces, além de integração com APIs e banco de dados. As principais tecnologias utilizadas são Next.js, Typescript, PL/SQL e Python.',
+        },
+        {
+          title: 'No Match',
+          role: 'Desenvolvedor Front-End',
+          date: 'Set 2023 - Nov 2023',
+          description:
+            'Atuei como desenvolvedor front-end no estúdio No Match, focado no desenvolvimento de landing pages criativas de alta conversão com foco no uso de técnicas avançadas de estilização interativas. As principais ferramentas utilizadas foram Astro, React, Tailwind e Javascript.',
+        },
+        {
           title: 'Allnft{lab}',
           role: 'Desenvolvedor Front-End',
           date: 'Mar 2023 - Ago 2023',
           description:
-            'Descrição da experiência, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque interdum orci nec commodo. Mauris non lacus sem. Nullam volutpat purus nibh, ut cursus tellus eleifend quis. In et est felis. Vivamus lacinia dui ut consectetur hendrerit. Fusce ac mi sit amet dolor ultrices cursus. Nullam sapien velit, fringilla nec justo nec, ultricies porta arcu.',
+            'No período de Março a Agosto de 2023, ocupei o cargo de desenvolvedor front-end na Allnft{lab}, laboratório criativo de tecnologias em blockchain localizado no Rio de Janeiro. Minhas principais responsabilidades eram desenvolver lading pages e processos de checkout utilizando tecnologias como Next.js, Typescript e Tailwind, o que envolvia consumo de APIs e integração com o backend e rede blockchain.  Colaborei estreitamente com time de tecnologia e design, atuando em projetos inovadores focados na criatividade, segurança e conversão.',
         },
         {
           title: 'Freelancer',
           date: 'Out 2022 - Atualmente',
           description:
-            'Descrição da experiência, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque interdum orci nec commodo. Mauris non lacus sem. Nullam volutpat purus nibh, ut cursus tellus eleifend quis. In et est felis. Vivamus lacinia dui ut consectetur hendrerit. Fusce ac mi sit amet dolor ultrices cursus. Nullam sapien velit, fringilla nec justo nec, ultricies porta arcu.',
+            'Desde outubro de 2022, venho atuando como freelancer na área de desenvolvimento web, com foco principal em tecnologias como Typescript, Next.js e Tailwind. Durante esse período, tive a oportunidade de colaborar com diversos clientes, traduzindo suas visões em soluções práticas e eficazes. Minha jornada tem sido marcada por desafios técnicos estimulantes e um compromisso sólido em entregar resultados que superem as expectativas.',
         },
       ],
     },
@@ -190,7 +135,7 @@ export const i18n: I18nProps = {
       title: 'Formação Acadêmica',
       content: [
         {
-          title: 'Sistemas de Informação',
+          title: 'Análise e Desenvolvimento de Sistemas',
           institution: 'UNESA',
           date: '2022 - Atualmente',
         },
@@ -202,16 +147,7 @@ export const i18n: I18nProps = {
       ],
     },
     contact: {
-      title: 'Vamos conversar?',
-      content: {
-        name: 'Nome',
-        namePlaceholder: 'João das Neves',
-        email: 'Email',
-        emailPlaceholder: 'exemplo@email.com',
-        message: 'Mensagem',
-        messagePlaceholder: 'Escreva aqui sua mensagem...',
-        send: 'Enviar',
-      },
+      title: 'Contato',
     },
   },
   en: {
@@ -224,92 +160,67 @@ export const i18n: I18nProps = {
     ],
     hero: {
       subtitle: 'Front-End Developer',
-      text: 'Texto sobre mim, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque interdum orci nec commodo. Mauris non lacus sem. Nullam volutpat purus nibh, ut cursus tellus eleifend quis. In et est felis. Vivamus lacinia dui ut consectetur hendrerit. Fusce ac mi sit amet dolor ultrices cursus. Nullam sapien velit, fringilla nec justo nec, ultricies porta arcu.',
+      text: "Welcome to my portfolio! I'm a frontend developer focused on creating web applications, turning ideas into creative and high-performance projects to ensure the best possible user experience.",
       cta1: 'Resume.pdf',
       cta2: "Let's talk?",
       imgAlt: 'Profile picture',
     },
-    projects: {
-      title: 'Projects',
-      toolsTitle: 'Main tools',
-      content: [
-        {
-          title: 'Nome do Projeto 1',
-          description:
-            'Descrição do projeto, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque interdum orci nec commodo. Mauris non lacus sem. Nullam volutpat purus nibh, ut cursus tellus eleifend quis. In et est felis. Vivamus lacinia dui ut consectetur hendrerit. Fusce ac mi sit amet dolor ultrices cursus. Nullam sapien velit, fringilla nec justo nec, ultricies porta arcu.',
-          githubTitle: '/jvfontouraj/nome-projeto',
-          githubLink: 'https://github.com/jvfontouraj/nome-projeto',
-          websiteTitle: 'site-do-projeto.com',
-          websiteLink: 'https://site-do-projeto.com',
-          figmaTitle: 'protótipo do projeto',
-          figmaLink: 'https://site-do-projeto.com',
-          tags: ['Typescript', 'Tailwind', 'Next.js', 'React'],
-          tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
-        },
-        {
-          title: 'Nome do Projeto 1',
-          description:
-            'Descrição do projeto, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque interdum orci nec commodo. Mauris non lacus sem. Nullam volutpat purus nibh, ut cursus tellus eleifend quis. In et est felis. Vivamus lacinia dui ut consectetur hendrerit. Fusce ac mi sit amet dolor ultrices cursus. Nullam sapien velit, fringilla nec justo nec, ultricies porta arcu.',
-          githubTitle: '/jvfontouraj/nome-projeto',
-          githubLink: 'https://github.com/jvfontouraj/nome-projeto',
-          websiteTitle: 'site-do-projeto.com',
-          websiteLink: 'https://site-do-projeto.com',
-          figmaTitle: 'protótipo do projeto',
-          figmaLink: 'https://site-do-projeto.com',
-          tags: ['Typescript', 'Tailwind', 'Next.js', 'React'],
-          tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
-        },
-        {
-          title: 'Nome do Projeto 1',
-          description:
-            'Descrição do projeto, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque interdum orci nec commodo. Mauris non lacus sem. Nullam volutpat purus nibh, ut cursus tellus eleifend quis. In et est felis. Vivamus lacinia dui ut consectetur hendrerit. Fusce ac mi sit amet dolor ultrices cursus. Nullam sapien velit, fringilla nec justo nec, ultricies porta arcu.',
-          githubTitle: '/jvfontouraj/nome-projeto',
-          githubLink: 'https://github.com/jvfontouraj/nome-projeto',
-          websiteTitle: 'site-do-projeto.com',
-          websiteLink: 'https://site-do-projeto.com',
-          figmaTitle: 'protótipo do projeto',
-          figmaLink: 'https://site-do-projeto.com',
-          tags: ['Typescript', 'Tailwind', 'Next.js', 'React'],
-          tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
-        },
-      ],
-    },
+
     skills: {
       title: 'Skills and Tools',
       content: [
-        'Typescript',
+        'HTML',
+        'CSS',
         'Javascript',
+        'Typescript',
         'React',
         'Next.js',
+        'Astro',
         'Tailwind',
+        'Stitches',
         'Styled-Components',
-        'CSS',
-        'HTML',
+        'i18n',
         'Figma',
         'Git',
-        'Node.js',
-        'Express',
-        'MongoDB',
-        'MySQL',
-        'PostgreSQL',
-        'Docker',
+        'Github',
+        'Zod',
+        'React Hook-Form',
+        'React Email',
+        'Resend',
+        'CVA',
+        'Axios',
+        'English',
       ],
     },
     experience: {
       title: 'Experience',
       content: [
         {
+          title: 'Wilson, Sons',
+          role: 'IT HR Intern',
+          date: 'Dec 2023 - Present',
+          description:
+            "I am currently interning at Wilson, Sons Maritime Services, where I work on the development of web applications and maintenance of internal systems in the company's Human Resources area. My main responsibilities involve creating and developing interfaces, as well as integrating with APIs and databases. The main technologies used are Next.js, Typescript, PL/SQL, and Python.",
+        },
+        {
+          title: 'No Match',
+          role: 'Front-End Developer',
+          date: 'Sep 2023 - Nov 2023',
+          description:
+            'I worked as a front-end developer at the No Match studio, focused on developing creative, high-conversion landing pages with a focus on using advanced interactive styling techniques. The main tools used were Astro, React, Tailwind, and Javascript.',
+        },
+        {
           title: 'Allnft{lab}',
           role: 'Front-End Developer',
           date: 'Mar 2023 - Ago 2023',
           description:
-            'Descrição da experiência, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque interdum orci nec commodo. Mauris non lacus sem. Nullam volutpat purus nibh, ut cursus tellus eleifend quis. In et est felis. Vivamus lacinia dui ut consectetur hendrerit. Fusce ac mi sit amet dolor ultrices cursus. Nullam sapien velit, fringilla nec justo nec, ultricies porta arcu.',
+            'From March to August 2023, I held the position of front-end developer at Allnft{lab}, a creative blockchain technology lab located in Rio de Janeiro. My primary responsibilities involved developing landing pages and checkout processes using technologies such as Next.js, React, and Tailwind, a process that required API consumption and integration with the backend and blockchain network. I worked closely with the technology and design teams, contributing to innovative projects focused on creativity, security, and conversion.',
         },
         {
           title: 'Freelancer',
-          date: 'Out 2022 - Currently',
+          date: 'Oct 2022 - Currently',
           description:
-            'Descrição da experiência, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque interdum orci nec commodo. Mauris non lacus sem. Nullam volutpat purus nibh, ut cursus tellus eleifend quis. In et est felis. Vivamus lacinia dui ut consectetur hendrerit. Fusce ac mi sit amet dolor ultrices cursus. Nullam sapien velit, fringilla nec justo nec, ultricies porta arcu.',
+            'Since October 2022, I have been working as a freelancer in the field of web development, with a primary focus on technologies such as TypeScript, Next.js, and Tailwind. During this period, I have had the opportunity to collaborate with various clients, translating their visions into practical and effective solutions. My journey has been marked by stimulating technical challenges and a strong commitment to delivering results that exceed expectations.',
         },
       ],
     },
@@ -317,7 +228,7 @@ export const i18n: I18nProps = {
       title: 'Education',
       content: [
         {
-          title: 'Information Systems',
+          title: 'Analysis and Systems Development',
           institution: 'UNESA',
           date: '2022 - Currently',
         },
@@ -329,16 +240,21 @@ export const i18n: I18nProps = {
       ],
     },
     contact: {
-      title: "Let's talk?",
-      content: {
-        name: 'Name',
-        namePlaceholder: 'John Snow',
-        email: 'Email',
-        emailPlaceholder: 'example@email.com',
-        message: 'Message',
-        messagePlaceholder: 'Write your message here...',
-        send: 'Send',
-      },
+      title: 'Contact',
     },
   },
 }
+
+// {
+//   title: 'Nome do Projeto 1',
+//   description:
+//     'Descrição do projeto, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque interdum orci nec commodo. Mauris non lacus sem. Nullam volutpat purus nibh, ut cursus tellus eleifend quis. In et est felis. Vivamus lacinia dui ut consectetur hendrerit. Fusce ac mi sit amet dolor ultrices cursus. Nullam sapien velit, fringilla nec justo nec, ultricies porta arcu.',
+//   githubTitle: '/jvfontouraj/nome-projeto',
+//   githubLink: 'https://github.com/jvfontouraj/nome-projeto',
+//   websiteTitle: 'site-do-projeto.com',
+//   websiteLink: 'https://site-do-projeto.com',
+//   figmaTitle: 'protótipo do projeto',
+//   figmaLink: 'https://site-do-projeto.com',
+//   tags: ['Typescript', 'Tailwind', 'Next.js', 'React'],
+//   tools: 'Next-Auth, i18n, Radix-ui, HookForm, Axios, Zod',
+// },
