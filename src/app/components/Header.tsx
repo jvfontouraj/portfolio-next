@@ -55,7 +55,7 @@ export function Header() {
     <header
       className={cs(
         'fixed top-0 z-50 m-auto w-screen overflow-hidden scroll-smooth px-5 py-3 shadow-2xl backdrop-blur-lg transition-all md:sticky md:h-fit md:px-0 md:py-7 md:shadow-none 2xl:py-10',
-        open ? 'h-screen' : 'h-16',
+        open ? 'h-[100dvh]' : 'h-16',
         theme === 'dark' ? 'bg-neutral-800/90' : 'bg-white/80',
       )}
     >

@@ -15,13 +15,13 @@ export function Contact({ lang }: { lang: string }) {
       className="mx-auto flex h-auto w-full flex-col items-center justify-center gap-10 md:max-w-[75rem]"
     >
       <h2 className="text-center text-3xl 2xl:text-4xl">{contact.title}</h2>
-      <div className="flex w-full justify-around">
+      <div className="flex w-full flex-col items-center justify-around gap-7 md:flex-row md:gap-0">
         <Link
           href={'https://github.com/jvfontouraj'}
           className="flex w-fit items-center gap-3 rounded-[10px] border border-white bg-neutral-800 px-6 py-3 shadow-[0px_4px_4px_0px_rgba(0,0,0,0.5)] transition-shadow duration-300 hover:shadow-white"
         >
-          <GitHubLogoIcon className="h-9 w-9" />
-          <div className="text-xl">/jvfontouraj</div>
+          <GitHubLogoIcon className="h-5 w-5 md:h-9 md:w-9" />
+          <div className="text-lg md:text-xl">/jvfontouraj</div>
         </Link>
         <Link
           target="_blank"
@@ -30,15 +30,15 @@ export function Contact({ lang }: { lang: string }) {
           }
           className="flex w-fit items-center gap-3 rounded-[10px] border border-white bg-neutral-800 px-6 py-3 shadow-[0px_4px_4px_0px_rgba(0,0,0,0.5)] transition-shadow duration-300 hover:shadow-white"
         >
-          <EnvelopeClosedIcon className="h-9 w-9" />
-          <div className="text-xl">jvfjardim@gmail.com</div>
+          <EnvelopeClosedIcon className="h-5 w-5 md:h-9 md:w-9" />
+          <div className="text-lg md:text-xl">jvfjardim@gmail.com</div>
         </Link>
         <Link
           href={'https://www.linkedin.com/in/joaovfjardim/'}
           className="flex w-fit items-center gap-3 rounded-[10px] border border-white bg-neutral-800 px-6 py-3 shadow-[0px_4px_4px_0px_rgba(0,0,0,0.5)] transition-shadow duration-300 hover:shadow-white"
         >
-          <LinkedInLogoIcon className="h-9 w-9" />
-          <div className="text-xl">/joaovfjardim</div>
+          <LinkedInLogoIcon className="h-5 w-5 md:h-9 md:w-9" />
+          <div className="text-lg md:text-xl">/joaovfjardim</div>
         </Link>
       </div>
     </section>
