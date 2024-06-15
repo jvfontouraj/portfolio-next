@@ -13,7 +13,7 @@ export function Education({ lang }: { lang: string }) {
         {education.content.map((content, index) => (
           <div
             key={index}
-            className="flex w-full flex-col gap-1 border border-neutral-700 p-6 md:max-w-[540px] md:p-12"
+            className="flex w-full flex-col gap-1 rounded-sm border border-neutral-500 bg-white/10 p-6 md:max-w-[540px] md:p-12"
           >
             <h3 className="text-lg font-semibold md:text-2xl 2xl:text-xl">
               {content.title}

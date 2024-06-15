@@ -35,7 +35,7 @@ export const projects: ProjectsProps = {
         title: 'Zico: The Legacy Collection',
         id: 'zico',
         description:
-          'Participei da criação desse grande projeto construindo o front-end, utilizando diferentes APIs e bibliotecas para que a aplicação dialogasse com o backend e rede blockchain. Junto do time da Allnft{lab}, criamos um aplicação completa que tinha como objetivo a venda de tokens exclusivos do Zico, para isso criamos uma lading page com as informações do projeto e um processo de chekout seguro e intuitivo para o usuário.',
+          'Participei da criação desse projeto construindo o front-end, utilizando diferentes APIs e bibliotecas para que a aplicação dialogasse com o backend e rede blockchain. Junto do time da Allnft{lab}, criamos um aplicação completa que tinha como objetivo a venda de tokens exclusivos do Zico, para isso criamos uma lading page com as informações do projeto e um processo de chekout seguro e intuitivo para o usuário.',
         websiteTitle: 'zicolegacy.com',
         websiteLink: 'https://www.zicolegacy.com/',
         tags: ['Next', 'React', 'Typescript', 'Tailwind'],
@@ -49,7 +49,7 @@ export const projects: ProjectsProps = {
         title: 'Museu Flamengo: NFT Pass',
         id: 'museu-flamengo',
         description:
-          'Esse também foi um grande projeto feito pelo time da Allnft{lab} que atuei como desenvolvedor front-end, integrado ao backend e rede blockchain, construímos uma lading page e sistema completo de checkout transparente e intuitivo. O intuito para essa aplicação era criar uma página informativa sobre a reinauguração do Museu do Flamengo e sua campanha de venda de tokens exclusivos para celebração desse momento. ',
+          'Esse também foi um projeto feito pelo time da Allnft{lab} que atuei como desenvolvedor front-end, integrado ao backend e rede blockchain, construímos uma lading page e sistema completo de checkout transparente e intuitivo. O intuito para essa aplicação era criar uma página informativa sobre a reinauguração do Museu do Flamengo e sua campanha de venda de tokens exclusivos para celebração desse momento. ',
         websiteTitle: 'nft.museuflamengo.com',
         websiteLink: 'https://nft.museuflamengo.com/',
         tags: ['Next', 'React', 'Typescript', 'Tailwind'],
@@ -74,7 +74,7 @@ export const projects: ProjectsProps = {
         },
       },
       {
-        title: 'Kizomba dos Saberes (Beta)',
+        title: 'Kizomba dos Saberes',
         id: 'kizomba',
         description:
           'O Kizomba é um projeto feito em parceria com o designer Guilherme Moura para um projeto de pesquisa da Universidade Federal de Sergipe, que tem como objetivo catalogar manifestações culturais regionais e disponibilizar materiais didáticos sobre o tema para professores e alunos. Além disso, utilizamos ilustrações do artista Edwan e elementos de suas obras na composição do site.',
@@ -92,7 +92,7 @@ export const projects: ProjectsProps = {
         },
       },
       {
-        title: 'Vegano Check BR (Beta)',
+        title: 'Vegano Check BR (em desenvolvimento)',
         id: 'vegano',
         description:
           'Projeto fullstack autoral que tem como objetivo auxiliar veganos brasileiros a consultarem se certos ingredientes são de origem animal ou vegetal. O frontend foi feito com React e o backend com NestJs, integrando banco de dados para sistema de login e API com dados dos ingredientes.',
@@ -172,7 +172,7 @@ export const projects: ProjectsProps = {
         },
       },
       {
-        title: 'Vegano Check BR (Beta)',
+        title: 'Vegano Check BR (under development)',
         id: 'vegano',
         description:
           'Authorial full-stack project designed to assist Brazilian vegans in checking whether certain ingredients are of animal or plant origin. The frontend was developed using React, and the backend using NestJs, integrating a database for the login system and an API with ingredient data.',
@@ -196,7 +196,7 @@ export const portfolio: PortfolioProps = {
     title: 'Portfólio (esse aqui!)',
     id: 'portfolio',
     description:
-      'Meu objetivo com esse projeto é conseguir expor minha experiência e habilidades de maneira simples e objetiva, dando foco ao conteúdo e explorando a estilização nos detalhes. O primeiro passo foi dispor minhas ideias de protótipo no Figma e testar diversas formas de chegar no resultado que queria, em seguida, transformei o protótipo em código, utilizando diversas ferramentas.',
+      'Meu objetivo com esse projeto é conseguir expor minha experiência e habilidades de maneira simples e objetiva, dando foco ao conteúdo. O primeiro passo foi dispor minhas ideias de protótipo no Figma e testar diversas formas de chegar no resultado que queria, em seguida, transformei o protótipo em código, utilizando diversas ferramentas.',
     githubTitle: '/jvfontouraj/portfolio-next',
     githubLink: 'https://github.com/jvfontouraj/portfolio-next',
     websiteTitle: 'joaojardim.dev',

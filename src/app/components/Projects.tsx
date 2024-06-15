@@ -21,9 +21,9 @@ export function Projects({ lang }: { lang: string }) {
           <div
             key={index}
             id={content.id}
-            className="flex h-auto w-full flex-col rounded-[4px] border border-neutral-700 md:flex-row"
+            className="flex h-auto w-full flex-col rounded-[4px] border border-neutral-500 bg-white/10 transition-shadow duration-500 hover:shadow-white md:flex-row"
           >
-            <div className="flex h-full w-full flex-col gap-7 border-r border-neutral-700 p-6 md:max-h-[575px] md:p-12">
+            <div className="flex h-full w-full flex-col gap-7 border-r border-neutral-500 p-6 md:max-h-[575px] md:p-12">
               <div className="flex flex-col gap-3">
                 <h3 className="text-lg font-semibold md:text-2xl 2xl:text-xl">
                   {content.title}
@@ -91,7 +91,7 @@ export function Projects({ lang }: { lang: string }) {
           </div>
         ))}
 
-        <div className="flex h-fit w-full flex-col gap-7 rounded-[4px] border border-neutral-700 p-6 shadow-[0px_0px_5px_1px_gba(255,255,255,0.5)] shadow-white md:h-full md:max-h-[575px] md:w-fit md:p-12">
+        <div className="flex h-fit w-full flex-col gap-7 rounded-[4px] border border-neutral-500 bg-white/10 p-6 transition-shadow duration-300 hover:shadow-white md:h-full md:max-h-[575px] md:w-fit md:p-12">
           <div className="flex flex-col gap-3">
             <h3 className="text-lg font-semibold md:text-2xl 2xl:text-xl">
               {portfolioContent.title}
@@ -109,7 +109,7 @@ export function Projects({ lang }: { lang: string }) {
                 className="flex w-fit items-center gap-1"
               >
                 <GlobeIcon className="mr-2 h-5 w-5 md:h-7 md:w-7" />
-                <span className="font-light">
+                <span className="border-b border-b-transparent font-light transition-colors duration-300 hover:border-b-white">
                   {portfolioContent.websiteTitle}
                 </span>
                 <ExternalLinkIcon />
@@ -122,7 +122,7 @@ export function Projects({ lang }: { lang: string }) {
                 className="flex w-fit items-center gap-1"
               >
                 <GitHubLogoIcon className="mr-2 h-5 w-5 md:h-7 md:w-7" />
-                <span className="font-light">
+                <span className="border-b border-b-transparent font-light transition-colors duration-300 hover:border-b-white">
                   {portfolioContent.githubTitle}
                 </span>
                 <ExternalLinkIcon />
@@ -135,7 +135,7 @@ export function Projects({ lang }: { lang: string }) {
                 className="flex w-fit items-center gap-1"
               >
                 <FigmaLogoIcon className="mr-2 h-5 w-5 md:h-7 md:w-7" />
-                <span className="font-light">
+                <span className="border-b border-b-transparent font-light transition-colors duration-300 hover:border-b-white">
                   {portfolioContent.figmaTitle}
                 </span>
                 <ExternalLinkIcon />

@@ -12,7 +12,7 @@ export function Experience({ lang }: { lang: string }) {
       {experience.content.map((content, index) => (
         <div
           key={index}
-          className="flex w-full flex-col gap-4 border border-neutral-700 p-6 md:p-12"
+          className="flex w-full flex-col gap-4 rounded-sm border border-neutral-500 bg-white/10 p-6 md:p-12"
         >
           <div className="flex flex-col ">
             <h3 className="text-lg font-semibold md:text-2xl 2xl:text-xl">

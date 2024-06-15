@@ -10,7 +10,7 @@ export function Skills({ lang }: { lang: string }) {
       <div className="mx-auto flex h-auto w-full flex-wrap items-center justify-center gap-5 md:max-w-[75rem] md:gap-10">
         {skills.content.map((content, index) => (
           <div key={index}>
-            <Badge>{content}</Badge>
+            <Badge className="bg-white/10">{content}</Badge>
           </div>
         ))}
       </div>

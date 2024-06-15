@@ -1,14 +1,5 @@
 interface ContactProps {
   title: string
-  content: {
-    name: string
-    namePlaceholder: string
-    email: string
-    emailPlaceholder: string
-    message: string
-    messagePlaceholder: string
-    send: string
-  }
 }
 
 interface EducationContentProps {
@@ -144,7 +135,7 @@ export const i18n: I18nProps = {
       title: 'Formação Acadêmica',
       content: [
         {
-          title: 'Sistemas de Informação',
+          title: 'Análise e Desenvolvimento de Sistemas',
           institution: 'UNESA',
           date: '2022 - Atualmente',
         },
@@ -156,16 +147,7 @@ export const i18n: I18nProps = {
       ],
     },
     contact: {
-      title: 'Vamos conversar?',
-      content: {
-        name: 'Nome',
-        namePlaceholder: 'João das Neves',
-        email: 'Email',
-        emailPlaceholder: 'exemplo@email.com',
-        message: 'Mensagem',
-        messagePlaceholder: 'Escreva aqui sua mensagem...',
-        send: 'Enviar',
-      },
+      title: 'Contato',
     },
   },
   en: {
@@ -246,7 +228,7 @@ export const i18n: I18nProps = {
       title: 'Education',
       content: [
         {
-          title: 'Information Systems',
+          title: 'Analysis and Systems Development',
           institution: 'UNESA',
           date: '2022 - Currently',
         },
@@ -258,16 +240,7 @@ export const i18n: I18nProps = {
       ],
     },
     contact: {
-      title: "Let's talk?",
-      content: {
-        name: 'Name',
-        namePlaceholder: 'John Snow',
-        email: 'Email',
-        emailPlaceholder: 'example@email.com',
-        message: 'Message',
-        messagePlaceholder: 'Write your message here...',
-        send: 'Send',
-      },
+      title: 'Contact',
     },
   },
 }

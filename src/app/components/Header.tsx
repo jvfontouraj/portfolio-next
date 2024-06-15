@@ -55,18 +55,18 @@ export function Header() {
     <header
       className={cs(
         'fixed top-0 z-50 m-auto w-screen overflow-hidden scroll-smooth px-5 py-3 shadow-2xl backdrop-blur-lg transition-all md:sticky md:h-fit md:px-0 md:py-7 md:shadow-none 2xl:py-10',
-        open ? 'h-screen' : 'h-[80px]',
+        open ? 'h-screen' : 'h-16',
         theme === 'dark' ? 'bg-neutral-800/90' : 'bg-white/80',
       )}
     >
       <div className="flex items-center justify-between md:hidden">
         <div className="flex flex-col">
-          <h1 className="text-2xl">João Jardim</h1>
-          <h2 className="text-sm font-extralight">
+          <h1 className="text-base">João Jardim</h1>
+          <h2 className="text-xs font-extralight">
             {i18n[lang].hero.subtitle}
           </h2>
         </div>
-        <button onClick={handleToggleMenu} className="relative h-8 w-8">
+        <button onClick={handleToggleMenu} className="relative h-4 w-4">
           <HamburgerMenuIcon
             className={cs(
               'absolute top-0 h-full w-auto transition-opacity',
@@ -103,7 +103,9 @@ export function Header() {
         <nav className="mb-8 mt-16 flex flex-col gap-5 text-lg md:my-0 md:flex-row md:text-base lg:gap-16 xl:gap-20 2xl:text-lg">
           {content.map((content, index) => (
             <button key={index} onClick={() => handleNavClick(content.id)}>
-              <h2 className="capitalize">{content.title}</h2>
+              <h2 className="border-b border-b-transparent capitalize transition-colors duration-300 hover:border-b-white">
+                {content.title}
+              </h2>
             </button>
           ))}
         </nav>
