@@ -4,10 +4,8 @@ import { Sora } from 'next/font/google'
 import { Header } from '../components/Header'
 import { ThemeProvider } from '../theme-provider'
 import { MenuContextProvider } from '@/context/MenuContext'
-import { Toaster } from '../components/ui/toaster'
 
 const sora = Sora({ subsets: ['latin'] })
-// const locale = 'pt'
 
 export const metadata = {
   title: 'Dev João Jardim',
@@ -26,7 +24,6 @@ export default function RootLayout({
       </head>
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
         <MenuContextProvider>
-          <Toaster />
           <body id="body" className="themeConfig relative">
             <Header />
             {children}
