@@ -26,6 +26,16 @@ interface PortfolioProps {
   [key: string]: ProjectProps
 }
 
+interface IntranetProps {
+  [key: string]: {
+    title: string
+    id: string
+    description: string
+    tags: string[]
+    tools: string
+  }
+}
+
 export const projects: ProjectsProps = {
   pt: {
     title: 'Projetos',
@@ -205,7 +215,7 @@ export const portfolio: PortfolioProps = {
     figmaLink:
       'https://www.figma.com/file/DmykHLRUptXr6qlknhMCbQ/Portf%C3%B3lio?type=design&node-id=243-1028&mode=design&t=dJjbhsbx1zWG9Nxr-0',
     tags: ['Next', 'React', 'Typescript', 'Tailwind'],
-    tools: 'i18n, Resend, React Hook Form, Axios, Zod, Figma',
+    tools: 'i18n, Figma, Radix-ui',
     images: {
       desktop: '/images/portfolio-desktop-comp.webp',
       mobile: '/images/portfolio-desktop-comp.webp',
@@ -225,10 +235,30 @@ export const portfolio: PortfolioProps = {
     figmaLink:
       'https://www.figma.com/file/DmykHLRUptXr6qlknhMCbQ/Portf%C3%B3lio?type=design&node-id=243-1028&mode=design&t=dJjbhsbx1zWG9Nxr-0',
     tags: ['Next', 'React', 'Typescript', 'Tailwind'],
-    tools: 'i18n, Resend, React Hook Form, Axios, Zod, Figma',
+    tools: 'i18n, Figma, Radix-ui',
     images: {
       desktop: '/images/portfolio-desktop-comp.webp',
       mobile: '/images/portfolio-desktop-comp.webp',
     },
+  },
+}
+
+export const intranet: IntranetProps = {
+  pt: {
+    title: 'Intranet WS',
+    id: 'intranet',
+    description:
+      'Estou participando do desenvolvimento do Portal Intranet da Wilson Sons, sendo o responsável pela criação dos layouts das páginas no Figma e desenvolvimento do Frontend. O foco desse projeto é desenvolver um canal de comunicação interna da empresa que seja cativante e intuitivo, atendendo aos mais diversos tipos de usuários dentro da companhia.',
+    tags: ['Next', 'React', 'Typescript'],
+    tools: 'Figma, Radix-ui, Next-Auth, Axios, Zod, React Hook Form',
+  },
+
+  en: {
+    title: 'Intranet WS',
+    id: 'intranet',
+    description:
+      'I am participating in the development of the Wilson Sons Intranet Portal, being responsible for creating the page layouts in Figma and developing the Frontend. The focus of this project is to develop an internal company communication channel that is engaging and intuitive, catering to the diverse types of users within the company.',
+    tags: ['Next', 'React', 'Typescript'],
+    tools: 'Figma, Radix-ui, Next-Auth, Axios, Zod, React Hook Form',
   },
 }

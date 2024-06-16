@@ -1,4 +1,4 @@
-import { projects, portfolio } from '@/assets/projects'
+import { projects, portfolio, intranet } from '@/assets/projects'
 import {
   ExternalLinkIcon,
   FigmaLogoIcon,
@@ -12,6 +12,7 @@ import Image from 'next/image'
 export function Projects({ lang }: { lang: string }) {
   const project = projects[lang]
   const portfolioContent = portfolio[lang]
+  const intranetContent = intranet[lang]
 
   return (
     <section id="projects" className="flex flex-col justify-center gap-10">
@@ -90,6 +91,26 @@ export function Projects({ lang }: { lang: string }) {
             </div>
           </div>
         ))}
+
+        <div className="flex h-fit w-full flex-col gap-7 rounded-[4px] border border-neutral-500 bg-white/10 p-6 transition-shadow duration-300 hover:shadow-white md:h-full md:max-h-[575px] md:w-fit md:p-12">
+          <div className="flex flex-col gap-3">
+            <h3 className="text-lg font-semibold md:text-2xl 2xl:text-xl">
+              {intranetContent.title}
+            </h3>
+            <p className="w-full text-sm md:max-w-[40ch] md:text-base">
+              {intranetContent.description}
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-3">
+            {intranetContent.tags.map((tag, index) => (
+              <Badge key={index}>{tag}</Badge>
+            ))}
+          </div>
+          <div className="flex flex-col text-sm md:text-base">
+            <span className="font-semibold">{project.toolsTitle}</span>
+            <span>{intranetContent.tools}</span>
+          </div>
+        </div>
 
         <div className="flex h-fit w-full flex-col gap-7 rounded-[4px] border border-neutral-500 bg-white/10 p-6 transition-shadow duration-300 hover:shadow-white md:h-full md:max-h-[575px] md:w-fit md:p-12">
           <div className="flex flex-col gap-3">
