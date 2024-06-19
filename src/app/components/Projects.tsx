@@ -92,7 +92,10 @@ export function Projects({ lang }: { lang: string }) {
           </div>
         ))}
 
-        <div className="flex h-fit w-full flex-col gap-7 rounded-[4px] border border-neutral-500 bg-white/10 p-6 transition-shadow duration-300 hover:shadow-white md:h-full md:max-h-[575px] md:w-fit md:p-12">
+        <div
+          id={intranetContent.id}
+          className="flex h-fit w-full flex-col gap-7 rounded-[4px] border border-neutral-500 bg-white/10 p-6 transition-shadow duration-300 hover:shadow-white md:h-full md:max-h-[575px] md:w-fit md:p-12"
+        >
           <div className="flex flex-col gap-3">
             <h3 className="text-lg font-semibold md:text-2xl 2xl:text-xl">
               {intranetContent.title}

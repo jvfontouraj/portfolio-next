@@ -7,6 +7,10 @@ import { ScrollToSection } from '@/lib/scrollToSection'
 
 export function Hero({ lang }: { lang: string }) {
   const content = i18n[lang].hero
+  const fileUrl =
+    lang === 'pt'
+      ? '/Currículo Desenvolvedor Frontend _ João Jardim.pdf'
+      : '/Frontend Developer Resume _ João Jardim.pdf'
 
   return (
     <section className="mb-12 mt-5 flex w-full flex-col-reverse gap-7 md:flex-row md:gap-0 2xl:mb-[110px] 2xl:h-[calc(100vh-260px)]">
@@ -23,10 +27,10 @@ export function Hero({ lang }: { lang: string }) {
           </p>
           <div className="mx-auto flex flex-col items-center gap-5 md:mx-0 md:flex-row md:gap-10">
             <Link
-              href="/Curriculo-Desenvolvedor-FrontEnd-Joao-Vitor-Fontoura-Jardim.pdf"
+              href={fileUrl}
               target="_blank"
               download
-              className="flex h-12 w-44 items-center justify-center gap-3 rounded-[10px] border border-neutral-800 bg-white text-base shadow-md transition-colors hover:bg-neutral-200 dark:border-none dark:bg-white/10 dark:shadow-white md:h-12 md:w-48 md:text-base 2xl:h-14 2xl:w-56 2xl:text-lg"
+              className="flex h-12 w-44 items-center justify-center gap-3 rounded-[10px] border border-neutral-800 bg-white text-base shadow-md transition-all duration-300 hover:shadow-whitehover dark:border-none dark:bg-white/10 dark:shadow-white dark:hover:bg-neutral-600 dark:hover:shadow-whitehover md:h-12 md:w-48 md:text-base 2xl:h-14 2xl:w-56 2xl:text-lg"
             >
               {content.cta1} <DownloadIcon width={20} height={20} />
             </Link>

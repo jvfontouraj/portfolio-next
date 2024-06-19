@@ -71,7 +71,8 @@ module.exports = {
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
       boxShadow: {
-        white: '0px 0px 4px 0px rgb(255 255 255 15%)',
+        white: '0px 0px 4px 0px rgb(255, 255, 255, 15%)',
+        whitehover: '0px 0px 8px 0px #ffffff26',
       },
     },
   },
