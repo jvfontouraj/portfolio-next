@@ -64,7 +64,7 @@ export const i18n: I18nProps = {
       { title: 'contato', id: 'contact' },
     ],
     hero: {
-      subtitle: 'Desenvolvedor Front-End',
+      subtitle: 'Analista de Sistemas',
       text: 'Seja bem vindo(a) ao meu portfólio! Sou um desenvolvedor front-end focado em criar aplicações para web, transformando ideias em projetos criativos e performáticos que priorizam a experiência do usuário.',
       cta1: 'Currículo.pdf',
       cta2: 'Vamos conversar?',
@@ -125,7 +125,7 @@ export const i18n: I18nProps = {
         },
         {
           title: 'Freelancer',
-          date: 'Out 2022 - Atualmente',
+          date: 'Out 2022 - Out 2024',
           description:
             'Desde outubro de 2022, venho atuando como freelancer na área de desenvolvimento web, com foco principal em tecnologias como Typescript, Next.js e Tailwind. Durante esse período, tive a oportunidade de colaborar com diversos clientes, traduzindo suas visões em soluções práticas e eficazes. Minha jornada tem sido marcada por desafios técnicos estimulantes e um compromisso sólido em entregar resultados que superem as expectativas.',
         },
@@ -137,7 +137,7 @@ export const i18n: I18nProps = {
         {
           title: 'Análise e Desenvolvimento de Sistemas',
           institution: 'UNESA',
-          date: '2022 - Atualmente',
+          date: '2022 - 2025',
         },
         {
           title: 'Ensino Médio',
@@ -159,7 +159,7 @@ export const i18n: I18nProps = {
       { title: 'contact', id: 'contact' },
     ],
     hero: {
-      subtitle: 'Front-End Developer',
+      subtitle: 'Systems Analyst',
       text: "Welcome to my portfolio! I'm a frontend developer focused on creating web applications, turning ideas into creative and high-performance projects to ensure the best possible user experience.",
       cta1: 'Resume.pdf',
       cta2: "Let's talk?",
